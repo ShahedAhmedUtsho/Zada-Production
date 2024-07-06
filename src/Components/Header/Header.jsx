@@ -9,7 +9,7 @@ const Header = () => {
   
     return (
      <>
-        <div className='min-h-[74px] header flex lg:container lg:mx-auto    justify-between items-center  '>
+        <div className='md:min-h-[74px] min-h-16  header flex lg:container mx-4 md:mx-8 lg:mx-auto    justify-between items-center  '>
            
             <h3 className="syne text-2xl md:text-3xl lg:text-4xl text-white  ">Zada</h3>
            
@@ -20,16 +20,16 @@ const Header = () => {
              }
                </ul>
            
-            <div className='text-white flex justify-center items-center gap-7'>
-                <div className='flex justify-center gap-4 items-center'>
+            <div className='text-white flex justify-center items-center gap-3'>
+                <div className='flex justify-center gap-5 items-center'>
                     <Phone className='text-amber-600' size={18} />
-                    <p className='  capitalize'>let's talk</p>
+                    <Link to="/login" className=' border border-gray-400 backdrop-blur-sm border-sm uppercase text-sm px-[1em] py-[0.3em]  '> <p className=' tracking-wide'>login</p></Link>
 
                 </div>
                 <AlignJustify onClick={() => {
               setIsOpen(!isOpen)
             
-            }} size={28} className='  font-thin border transition-all  duration-200   border-current hover:text-amber-600  text-gray-400 p-1'/>
+            }} size={30} className='  font-thin border transition-all  duration-200   border-current hover:text-amber-600  text-gray-400 p-1'/>
             </div>
             
         </div>
@@ -50,7 +50,7 @@ const Header = () => {
 
             <ul className='flex lg:hidden md:mb-20 mb-10 flex-col'>
      {  ["home" ,"about","services","contact"].map((a, index)=>
-             <NavLink to={ a === "home" ? "/" :`/${a}`} className=' text-gray-500 hover:text-amber-600 font-medium text-sm  uppercase   tracking-[1px] leading-4 px-5 py-3   ' key={index}>{a}</NavLink>)
+             <NavLink to={ a === "home" ? "/" :`/${a}`} className=' text-gray-500 hover:text-amber-600 font-medium text-sm  uppercase   tracking-[1px] leading-4 md:px-5 py-3   ' key={index}>{a}</NavLink>)
              }
      </ul>
       <h5 className="syne text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight mb-4">Our Contact</h5>
@@ -63,7 +63,35 @@ const Header = () => {
             </ul>
 
 
-            <ul className='flex gap-[1.7vw]   py-2 mt-auto '>
+            <div className='md:grid hidden grid-cols-3 max-w-96 min-h-52 pr-10 mt-10  gap-2'>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+    <div className="bg-slate-400 rounded-sm ">
+        <img src="https://askproject.net/rayan/wp-content/uploads/sites/106/2022/10/portrait-of-an-asia-beautiful-girl-A3EB9AP.jpg" alt="grid photo" />
+    </div>
+
+</div>
+
+
+
+
+
+
+
+            <ul className='flex lg:gap-[1.7vw] md:gap-[4vw] gap-[8vw]   py-2 mt-auto '>
                
             <a href="" target='_blank'>
                 <Facebook size={21} className=' hover:text-amber-600  rounded-full' />

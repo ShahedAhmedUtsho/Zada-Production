@@ -11,6 +11,7 @@ import Register from './Pages/Register/Register'
 import Contact from './Pages/Contact/Contact'
 import Projects from './Pages/Projects/Projects'
 import About from './Pages/Home/About/About'
+import Services from './Pages/Services/Services'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
 {
       path:'/about',
       element:<About/>
+    },
+    
+{
+      path:'/services',
+      element:<Services/>
     },
       {
         path:'/colors',
