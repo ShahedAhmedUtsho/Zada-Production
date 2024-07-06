@@ -26,7 +26,7 @@ if(isHave){
 
 
     return (
-        <div className='min-h-screen flex text-white   bg-[#1c1c1c] flex-col'>
+        <div className='min-h-screen   flex text-white   bg-[#1c1c1c] flex-col'>
          {hide ||   <Header/>}
             <Outlet/>
             

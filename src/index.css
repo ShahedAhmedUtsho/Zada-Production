@@ -6,6 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #1c1c1c;
+}
 
 .syne {
   font-family: "Syne", sans-serif;
