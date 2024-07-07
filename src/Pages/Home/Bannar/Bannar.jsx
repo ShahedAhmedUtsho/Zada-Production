@@ -3,7 +3,7 @@ import React from 'react';
 const Bannar = () => {
     return (
         <div className="globalBG">
-            <div className='lg:container lg:mx-auto md:mx-8 mx-4 md:min-h-screen md:pb-20 '>
+            <div className='lg:container lg:mx-auto md:mx-8 mx-4 md:min-h-screen lg:pb-20 pb-5  md:pb-10'>
                 <div className='w-full md:flex globalBG h-full'>
                     <div className="md:max-h-screen flex   flex-col !bg-transparent mt-24 lg:max-h-none md:w-5/12 globalBG">
                         <h2 className="syne text-5xl text-center md:text-7xl lg:text-[8.9vw] font-bold leading-tight tracking-tight mb-4">
