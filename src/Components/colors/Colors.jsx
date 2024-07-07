@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-
+import { Cloudinary } from '@cloudinary/url-gen';
+import { auto } from '@cloudinary/url-gen/actions/resize';
+import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
+import { AdvancedImage } from '@cloudinary/react';
 const colors = [
   { name: 'custom-100', hex: '#e8e8e9', label: 'Custom 100' },
   { name: 'custom-200', hex: '#d2d2d2', label: 'Custom 200' },
@@ -29,31 +32,60 @@ const ColorGrid = () => {
     setCopiedColor(hex);
   };
 
+
+
+
+
+
+  const cld = new Cloudinary({ cloud: { cloudName: 'dmcmxmqpw' } });
+ 
+  // Use this sample image or upload your own via the Media Explorer
+  const img = cld
+        .image('cld-sample-5')
+        .format('auto') // Optimize delivery by resizing and applying auto-format and auto-quality
+        .quality('auto')
+        .resize(auto().gravity(autoGravity()).width(500).height(500)); // Transform the image: auto-crop to square aspect_ratio
+
   return (
-    <div className="p-4">
-      <h2 className="syne text-3xl font-bold mb-4">Custom Colors</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {colors.map((color) => (
-          <div
-            key={color.name}
-            className={`p-4 rounded-lg text-white cursor-pointer`}
-            style={{ backgroundColor: color.hex }}
-            onClick={() => handleColorClick(color.hex)}
-          >
-            <div className="h-24 w-full rounded" style={{ backgroundColor: color.hex }}></div>
-            <p className="mt-2 text-center font-bold">{color.label}</p>
-            <p className="mt-1 text-center">{color.name}</p>
-            <p className="mt-1 text-center">{color.hex}</p>
-          </div>
-        ))}
-      </div>
-      {copiedColor && (
-        <div className="mt-4 p-2 bg-green-200 text-green-800 rounded">
-          Copied {copiedColor} to clipboard!
-        </div>
-      )}
-    </div>
-  );
+  
+  <div>
+    
+    <img src="https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/snpo67xklz3xfyshvfy4" alt="" />
+    <AdvancedImage cldImg={img}/>;
+  </div>
+  
+  
+  )
+ 
+
+
+
+  
+  // return (
+    // <div className="p-4">
+    //   <h2 className="syne text-3xl font-bold mb-4">Custom Colors</h2>
+    //   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    //     {colors.map((color) => (
+    //       <div
+    //         key={color.name}
+    //         className={`p-4 rounded-lg text-white cursor-pointer`}
+    //         style={{ backgroundColor: color.hex }}
+    //         onClick={() => handleColorClick(color.hex)}
+    //       >
+    //         <div className="h-24 w-full rounded" style={{ backgroundColor: color.hex }}></div>
+    //         <p className="mt-2 text-center font-bold">{color.label}</p>
+    //         <p className="mt-1 text-center">{color.name}</p>
+    //         <p className="mt-1 text-center">{color.hex}</p>
+    //       </div>
+    //     ))}
+    //   </div>
+    //   {copiedColor && (
+    //     <div className="mt-4 p-2 bg-green-200 text-green-800 rounded">
+    //       Copied {copiedColor} to clipboard!
+    //     </div>
+    //   )}
+    // </div>
+  // );
 };
 
 export default ColorGrid;

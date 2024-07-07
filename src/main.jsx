@@ -10,8 +10,9 @@ import Login from './Pages/Login/Login'
 import Register from './Pages/Register/Register'
 import Contact from './Pages/Contact/Contact'
 import Projects from './Pages/Projects/Projects'
-import About from './Pages/Home/About/About'
+
 import Services from './Pages/Services/Services'
+import About from './Pages/About/About'
 
 const router = createBrowserRouter([
   {
