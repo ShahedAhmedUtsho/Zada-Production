@@ -2,6 +2,10 @@ import React from 'react';
 import ColorGrid from '../../Components/colors/Colors';
 import Bannar from './Bannar/Bannar';
 import AboutSection from './AboutSection/AboutSection';
+import ServicesSection from './ServicesSection/ServicesSection';
+import TeamSection from './Team/TeamSection';
+
+
 
 const Home = () => {
     return (
@@ -10,9 +14,10 @@ const Home = () => {
 
 <Bannar/>
 <AboutSection/>
+<ServicesSection/>
 
 
-
+<TeamSection/>
 
 
         </div>
