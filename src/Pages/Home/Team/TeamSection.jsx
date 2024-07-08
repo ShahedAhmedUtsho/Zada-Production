@@ -52,18 +52,20 @@ const TeamSection = () => {
                         Meet the talented and dedicated individuals behind our success. Each member brings unique skills and expertise to the table.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {team.map((member, index) => (
-                        <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
-                            <img src={member.photo} alt={member.name} className="w-full h-56 object-cover" />
-                            <div className="p-6">
-                                <h4 className="syne text-xl md:text-2xl lg:text-3xl font-medium leading-snug tracking-tight uppercase mb-2">
+                        <div key={index} className=" shadow-lg rounded-lg overflow-hidden flex">
+                            <div className="w-1/3 flex justify-center items-center">
+                                <img src={member.photo} alt={member.name} className="w-2/3 h-auto object-cover object-center" />
+                            </div>
+                            <div className="p-4 w-2/3">
+                                <h4 className="syne text-lg md:text-xl font-medium leading-snug tracking-tight uppercase mb-1">
                                     {member.name}
                                 </h4>
-                                <h5 className="syne text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight mb-2 text-amber-600">
+                                <h5 className="syne text-sm md:text-base font-medium leading-snug tracking-tight mb-1 text-amber-600">
                                     {member.role}
                                 </h5>
-                                <p className="dm text-sm mt-5 md:text-base leading-9 tracking-normal">
+                                <p className="dm text-xs md:text-sm leading-6 tracking-normal">
                                     {member.description}
                                 </p>
                             </div>
