@@ -15,7 +15,7 @@ const Header = () => {
            
             < ul className='w-full lg:flex hidden  justify-around max-w-[550px]   items-center'>
             
-             {  ["home" ,"about","services","contact"].map((a, index)=>
+             {  ["home" ,"about","services","contact","colors"].map((a, index)=>
              <NavLink to={ a === "home" ? "/" :`/${a}`} className=' text-gray-500 hover:text-amber-600 font-medium text-sm  uppercase   tracking-[1px] leading-4 px-5 py-3   ' key={index}>{a}</NavLink>)
              }
                </ul>

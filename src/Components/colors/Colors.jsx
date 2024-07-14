@@ -1,91 +1,112 @@
-import React, { useState } from 'react';
-import { Cloudinary } from '@cloudinary/url-gen';
-import { auto } from '@cloudinary/url-gen/actions/resize';
-import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
-import { AdvancedImage } from '@cloudinary/react';
-const colors = [
-  { name: 'custom-100', hex: '#e8e8e9', label: 'Custom 100' },
-  { name: 'custom-200', hex: '#d2d2d2', label: 'Custom 200' },
-  { name: 'custom-300', hex: '#bbbbbc', label: 'Custom 300' },
-  { name: 'custom-400', hex: '#8e8e8f', label: 'Custom 400' },
-  { name: 'custom-500', hex: '#777778', label: 'Custom 500' },
-  { name: 'custom-600', hex: '#49494b', label: 'Custom 600' },
-  { name: 'custom-700', hex: '#333335', label: 'Custom 700' },
-  { name: 'custom-800', hex: '#19191b', label: 'Custom 800' },
-  { name: 'custom-900', hex: '#000000', label: 'Custom 900' },
-  { name: 'brown-100', hex: '#F2ECEB', label: 'Brown 100' },
-  { name: 'brown-200', hex: '#DFD4D1', label: 'Brown 200' },
-  { name: 'brown-300', hex: '#CCBDB7', label: 'Brown 300' },
-  { name: 'brown-400', hex: '#B8A69D', label: 'Brown 400' },
-  { name: 'brown-500', hex: '#A48F83', label: 'Brown 500' },
-  { name: 'brown-600', hex: '#90786A', label: 'Brown 600' },
-  { name: 'brown-700', hex: '#7C6150', label: 'Brown 700' },
-  { name: 'brown-800', hex: '#6F594F', label: 'Brown 800' },
-  { name: 'brown-900', hex: '#56443C', label: 'Brown 900' },
-];
+import React, { useState, useEffect } from 'react';
 
-const ColorGrid = () => {
-  const [copiedColor, setCopiedColor] = useState('');
+const CountryGrid = () => {
+  const [countries, setCountries] = useState([]);
+const [currentPage,setCurrentPage] = useState(1) ;
+const [search,setSearch] =useState("")
+const itemPerPage = 8 ; 
 
-  const handleColorClick = (hex) => {
-    navigator.clipboard.writeText(hex);
-    setCopiedColor(hex);
-  };
+const filterCountries = countries.filter(country => country.name.toLowerCase().includes(search.toLowerCase())) 
 
 
+const startIndex = (currentPage - 1)* itemPerPage ;
+const endIndex = startIndex + itemPerPage ;
+const currentItems = filterCountries.slice(startIndex,endIndex)
 
+const totalPages = Math.ceil(filterCountries.length / itemPerPage) ; 
 
+  useEffect(() => {
 
-
-  const cld = new Cloudinary({ cloud: { cloudName: 'dmcmxmqpw' } });
- 
-  // Use this sample image or upload your own via the Media Explorer
-  const img = cld
-        .image('cld-sample-5')
-        .format('auto') // Optimize delivery by resizing and applying auto-format and auto-quality
-        .quality('auto')
-        .resize(auto().gravity(autoGravity()).width(500).height(500)); // Transform the image: auto-crop to square aspect_ratio
-
-  return (
-  
-  <div>
+    const fetchData = async () => {
+      try {
+        const response = await fetch('../../../public/countrys.json'); // Assuming countries.json is in public folder
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
+        setCountries(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
     
-    <img src="https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/snpo67xklz3xfyshvfy4" alt="" />
-    <AdvancedImage cldImg={img}/>;
-  </div>
-  
-  
-  )
- 
+    fetchData();
+  }, []);
+
+
+
+
+
+
+const handleSubmit = e => {
+  e.preventDefault()
+  const form = e.target
+  console.log(filterCountries)
+
+console.log(search)
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
   
-  // return (
-    // <div className="p-4">
-    //   <h2 className="syne text-3xl font-bold mb-4">Custom Colors</h2>
-    //   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    //     {colors.map((color) => (
-    //       <div
-    //         key={color.name}
-    //         className={`p-4 rounded-lg text-white cursor-pointer`}
-    //         style={{ backgroundColor: color.hex }}
-    //         onClick={() => handleColorClick(color.hex)}
-    //       >
-    //         <div className="h-24 w-full rounded" style={{ backgroundColor: color.hex }}></div>
-    //         <p className="mt-2 text-center font-bold">{color.label}</p>
-    //         <p className="mt-1 text-center">{color.name}</p>
-    //         <p className="mt-1 text-center">{color.hex}</p>
-    //       </div>
-    //     ))}
-    //   </div>
-    //   {copiedColor && (
-    //     <div className="mt-4 p-2 bg-green-200 text-green-800 rounded">
-    //       Copied {copiedColor} to clipboard!
-    //     </div>
-    //   )}
-    // </div>
-  // );
+  return (
+
+   <>
+   
+   <form className='max-w-96 mx-auto' onSubmit={handleSubmit}>
+
+<input onChange={e=>setSearch(e.target.value)} className='p-2 text-xl bg-transparent border  rounded-md' type="text" name='search' />
+    <button  className='border p-2 text-xl rounded-md ml-3 ' type="submit">
+      search
+    </button>
+
+
+
+
+   </form>
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4  mx-auto max-w-7xl px-4 py-8">
+      {currentItems.map((country, index) => (
+        <div key={index} className=" border rounded-lg shadow-md p-4">
+          <h2 className="text-lg font-semibold mb-2">{country.name}</h2>
+          <p><strong>Continent:</strong> {country.continent}</p>
+          <p><strong>Independence Date:</strong> {country.independence_date}</p>
+          <p><strong>Leader:</strong> {country.leader}</p>
+          <p><strong>Area (km²):</strong> {country.area_km2}</p>
+          <p><strong>Population:</strong> {country.population}</p>
+          <p><strong>Rank by Area:</strong> {country.rank_by_area}</p>
+        </div>
+      ))}
+     
+      
+    </div>
+    <div className='flex flex-wrap max-w-[90vw] mx-auto bg-gree gap-5'>
+        <button disabled={currentPage === 1} className='p-2 text-xs  disabled:opacity-35  rounded-md border-2 ' onClick={()=> setCurrentPage(currentPage-1)}>prev</button>
+        {Array.from({length : totalPages},(_,index)=> <button key={index} className={`border py-1 ${currentPage === index+1 && "  backdrop-blur-lg bg-red-600 bg-opacity-30 border-red-500"} bg-transparent  rounded-md px-3`} onClick={()=>{setCurrentPage(index+1)}}>
+
+{index+1}
+
+        </button>)}
+        <button  disabled={currentPage === totalPages} className='p-2 disabled:opacity-35 rounded-md border-2 ' onClick={()=> setCurrentPage(currentPage+1)}>next</button>
+      </div>
+
+
+
+   </>
+  );
 };
 
-export default ColorGrid;
+export default CountryGrid;

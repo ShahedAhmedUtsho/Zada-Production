@@ -1,0 +1,1775 @@
+[
+    {
+        "name": "Afghanistan",
+        "continent": "Asia",
+        "independence_date": "1919-08-19",
+        "leader": "President Mohammad Ashraf Ghani",
+        "area_km2": 652230,
+        "population": 38928341,
+        "rank_by_area": 41
+    },
+    {
+        "name": "Albania",
+        "continent": "Europe",
+        "independence_date": "1912-11-28",
+        "leader": "Prime Minister Edi Rama",
+        "area_km2": 28748,
+        "population": 2877797,
+        "rank_by_area": 144
+    },
+    {
+        "name": "Algeria",
+        "continent": "Africa",
+        "independence_date": "1962-07-05",
+        "leader": "President Abdelmadjid Tebboune",
+        "area_km2": 2381741,
+        "population": 43851044,
+        "rank_by_area": 10
+    },
+    {
+        "name": "Andorra",
+        "continent": "Europe",
+        "independence_date": "1278-09-08",
+        "leader": "Prime Minister Xavier Espot Zamora",
+        "area_km2": 468,
+        "population": 77265,
+        "rank_by_area": 200
+    },
+    {
+        "name": "Angola",
+        "continent": "Africa",
+        "independence_date": "1975-11-11",
+        "leader": "President João Lourenço",
+        "area_km2": 1246700,
+        "population": 32866272,
+        "rank_by_area": 23
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "continent": "North America",
+        "independence_date": "1981-11-01",
+        "leader": "Prime Minister Gaston Browne",
+        "area_km2": 442,
+        "population": 97928,
+        "rank_by_area": 201
+    },
+    {
+        "name": "Argentina",
+        "continent": "South America",
+        "independence_date": "1816-07-09",
+        "leader": "President Alberto Fernández",
+        "area_km2": 2780400,
+        "population": 45195774,
+        "rank_by_area": 8
+    },
+    {
+        "name": "Armenia",
+        "continent": "Asia",
+        "independence_date": "1991-09-21",
+        "leader": "Prime Minister Nikol Pashinyan",
+        "area_km2": 29743,
+        "population": 2963243,
+        "rank_by_area": 143
+    },
+    {
+        "name": "Australia",
+        "continent": "Australia/Oceania",
+        "independence_date": "1901-01-01",
+        "leader": "Prime Minister Anthony Albanese",
+        "area_km2": 7692024,
+        "population": 25687041,
+        "rank_by_area": 6
+    },
+    {
+        "name": "Austria",
+        "continent": "Europe",
+        "independence_date": "1955-07-27",
+        "leader": "Chancellor Karl Nehammer",
+        "area_km2": 83871,
+        "population": 9006398,
+        "rank_by_area": 115
+    },
+    {
+        "name": "Azerbaijan",
+        "continent": "Asia",
+        "independence_date": "1991-08-30",
+        "leader": "President Ilham Aliyev",
+        "area_km2": 86600,
+        "population": 10139177,
+        "rank_by_area": 112
+    },
+    {
+        "name": "Bahamas",
+        "continent": "North America",
+        "independence_date": "1973-07-10",
+        "leader": "Prime Minister Philip Davis",
+        "area_km2": 13943,
+        "population": 393244,
+        "rank_by_area": 160
+    },
+    {
+        "name": "Bahrain",
+        "continent": "Asia",
+        "independence_date": "1971-08-15",
+        "leader": "King Hamad bin Isa Al Khalifa",
+        "area_km2": 780,
+        "population": 1701575,
+        "rank_by_area": 189
+    },
+    {
+        "name": "Bangladesh",
+        "continent": "Asia",
+        "independence_date": "1971-03-26",
+        "leader": "Prime Minister Sheikh Hasina",
+        "area_km2": 147570,
+        "population": 169000000,
+        "rank_by_area": 92
+    },
+    {
+        "name": "Barbados",
+        "continent": "North America",
+        "independence_date": "1966-11-30",
+        "leader": "Prime Minister Mia Mottley",
+        "area_km2": 430,
+        "population": 287371,
+        "rank_by_area": 202
+    },
+    {
+        "name": "Belarus",
+        "continent": "Europe",
+        "independence_date": "1991-08-25",
+        "leader": "President Alexander Lukashenko",
+        "area_km2": 207600,
+        "population": 9449323,
+        "rank_by_area": 84
+    },
+    {
+        "name": "Belgium",
+        "continent": "Europe",
+        "independence_date": "1830-10-04",
+        "leader": "Prime Minister Alexander De Croo",
+        "area_km2": 30528,
+        "population": 11589623,
+        "rank_by_area": 136
+    },
+    {
+        "name": "Belize",
+        "continent": "North America",
+        "independence_date": "1981-09-21",
+        "leader": "Prime Minister Johnny Briceño",
+        "area_km2": 22966,
+        "population": 397621,
+        "rank_by_area": 147
+    },
+    {
+        "name": "Benin",
+        "continent": "Africa",
+        "independence_date": "1960-08-01",
+        "leader": "President Patrice Talon",
+        "area_km2": 112622,
+        "population": 12123200,
+        "rank_by_area": 100
+    },
+    {
+        "name": "Bhutan",
+        "continent": "Asia",
+        "independence_date": "1949-08-08",
+        "leader": "Prime Minister Lotay Tshering",
+        "area_km2": 38394,
+        "population": 771608,
+        "rank_by_area": 135
+    },
+    {
+        "name": "Bolivia",
+        "continent": "South America",
+        "independence_date": "1825-08-06",
+        "leader": "President Luis Arce",
+        "area_km2": 1098581,
+        "population": 11673029,
+        "rank_by_area": 28
+    },
+    {
+        "name": "Bosnia and Herzegovina",
+        "continent": "Europe",
+        "independence_date": "1992-03-01",
+        "leader": "Chairman Željko Komšić",
+        "area_km2": 51197,
+        "population": 3280819,
+        "rank_by_area": 127
+    },
+    {
+        "name": "Botswana",
+        "continent": "Africa",
+        "independence_date": "1966-09-30",
+        "leader": "President Mokgweetsi Masisi",
+        "area_km2": 581730,
+        "population": 2351625,
+        "rank_by_area": 47
+    },
+    {
+        "name": "Brazil",
+        "continent": "South America",
+        "independence_date": "1822-09-07",
+        "leader": "President Luiz Inácio Lula da Silva",
+        "area_km2": 8515767,
+        "population": 213993437,
+        "rank_by_area": 5
+    },
+    {
+        "name": "Brunei",
+        "continent": "Asia",
+        "independence_date": "1984-01-01",
+        "leader": "Sultan Hassanal Bolkiah",
+        "area_km2": 5765,
+        "population": 442400,
+        "rank_by_area": 172
+    },
+    {
+        "name": "Bulgaria",
+        "continent": "Europe",
+        "independence_date": "1908-09-22",
+        "leader": "President Rumen Radev",
+        "area_km2": 110994,
+        "population": 6948445,
+        "rank_by_area": 103
+    },
+    {
+        "name": "Burkina Faso",
+        "continent": "Africa",
+        "independence_date": "1960-08-05",
+        "leader": "President Roch Marc Christian Kaboré",
+        "area_km2": 272967,
+        "population": 20903273,
+        "rank_by_area": 74
+    },
+    {
+        "name": "Burundi",
+        "continent": "Africa",
+        "independence_date": "1962-07-01",
+        "leader": "President Évariste Ndayishimiye",
+        "area_km2": 27834,
+        "population": 11890784,
+        "rank_by_area": 145
+    },
+    {
+        "name": "Cabo Verde",
+        "continent": "Africa",
+        "independence_date": "1975-07-05",
+        "leader": "Prime Minister Ulisses Correia e Silva",
+        "area_km2": 4033,
+        "population": 555988,
+        "rank_by_area": 174
+    },
+    {
+        "name": "Cambodia",
+        "continent": "Asia",
+        "independence_date": "1953-11-09",
+        "leader": "Prime Minister Hun Sen",
+        "area_km2": 181035,
+        "population": 16718965,
+        "rank_by_area": 88
+    },
+    {
+        "name": "Cameroon",
+        "continent": "Africa",
+        "independence_date": "1960-01-01",
+        "leader": "President Paul Biya",
+        "area_km2": 475442,
+        "population": 26545863,
+        "rank_by_area": 54
+    },
+    {
+        "name": "Canada",
+        "continent": "North America",
+        "independence_date": "1867-07-01",
+        "leader": "Prime Minister Justin Trudeau",
+        "area_km2": 9984670,
+        "population": 38005238,
+        "rank_by_area": 2
+    },
+    {
+        "name": "Central African Republic",
+        "continent": "Africa",
+        "independence_date": "1960-08-13",
+        "leader": "President Faustin-Archange Touadéra",
+        "area_km2": 622984,
+        "population": 4829767,
+        "rank_by_area": 45
+    },
+    {
+        "name": "Chad",
+        "continent": "Africa",
+        "independence_date": "1960-08-11",
+        "leader": "President Mahamat Idriss Déby Itno",
+        "area_km2": 1284000,
+        "population": 16425864,
+        "rank_by_area": 21
+    },
+    {
+        "name": "Chile",
+        "continent": "South America",
+        "independence_date": "1818-02-12",
+        "leader": "President Gabriel Boric",
+        "area_km2": 756102,
+        "population": 19116201,
+        "rank_by_area": 38
+    },
+    {
+        "name": "China",
+        "continent": "Asia",
+        "independence_date": "1949-10-01",
+        "leader": "President Xi Jinping",
+        "area_km2": 9596961,
+        "population": 1439323776,
+        "rank_by_area": 4
+    },
+    {
+        "name": "Colombia",
+        "continent": "South America",
+        "independence_date": "1810-07-20",
+        "leader": "President Gustavo Petro",
+        "area_km2": 1141748,
+        "population": 50882891,
+        "rank_by_area": 26
+    },
+    {
+        "name": "Comoros",
+        "continent": "Africa",
+        "independence_date": "1975-07-06",
+        "leader": "President Azali Assoumani",
+        "area_km2": 1862,
+        "population": 869601,
+        "rank_by_area": 178
+    },
+    {
+        "name": "Congo, Democratic Republic of the",
+        "continent": "Africa",
+        "independence_date": "1960-06-30",
+        "leader": "President Félix Tshisekedi",
+        "area_km2": 2344858,
+        "population": 89561403,
+        "rank_by_area": 11
+    },
+    {
+        "name": "Congo, Republic of the",
+        "continent": "Africa",
+        "independence_date": "1960-08-15",
+        "leader": "President Denis Sassou Nguesso",
+        "area_km2": 342000,
+        "population": 5518092,
+        "rank_by_area": 64
+    },
+    {
+        "name": "Costa Rica",
+        "continent": "North America",
+        "independence_date": "1821-09-15",
+        "leader": "President Rodrigo Chaves Robles",
+        "area_km2": 51100,
+        "population": 5094118,
+        "rank_by_area": 128
+    },
+    {
+        "name": "Croatia",
+        "continent": "Europe",
+        "independence_date": "1991-06-25",
+        "leader": "President Zoran Milanović",
+        "area_km2": 56594,
+        "population": 4047200,
+        "rank_by_area": 125
+    },
+    {
+        "name": "Cuba",
+        "continent": "North America",
+        "independence_date": "1902-05-20",
+        "leader": "President Miguel Díaz-Canel",
+        "area_km2": 109884,
+        "population": 11326616,
+        "rank_by_area": 105
+    },
+    {
+        "name": "Cyprus",
+        "continent": "Asia",
+        "independence_date": "1960-08-16",
+        "leader": "President Nicos Anastasiades",
+        "area_km2": 9251,
+        "population": 1207359,
+        "rank_by_area": 162
+    },
+    {
+        "name": "Czech Republic",
+        "continent": "Europe",
+        "independence_date": "1993-01-01",
+        "leader": "President Petr Pavel",
+        "area_km2": 78866,
+        "population": 10708981,
+        "rank_by_area": 115
+    },
+    {
+        "name": "Denmark",
+        "continent": "Europe",
+        "independence_date": "1849-06-05",
+        "leader": "Prime Minister Mette Frederiksen",
+        "area_km2": 43094,
+        "population": 5831404,
+        "rank_by_area": 130
+    },
+    {
+        "name": "Djibouti",
+        "continent": "Africa",
+        "independence_date": "1977-06-27",
+        "leader": "President Ismaïl Omar Guelleh",
+        "area_km2": 23200,
+        "population": 988000,
+        "rank_by_area": 148
+    },
+    {
+        "name": "Dominica",
+        "continent": "North America",
+        "independence_date": "1978-11-03",
+        "leader": "Prime Minister Roosevelt Skerrit",
+        "area_km2": 751,
+        "population": 71991,
+        "rank_by_area": 181
+    },
+    {
+        "name": "Dominican Republic",
+        "continent": "North America",
+        "independence_date": "1844-02-27",
+        "leader": "President Luis Abinader",
+        "area_km2": 48671,
+        "population": 10847904,
+        "rank_by_area": 131
+    },
+    {
+        "name": "East Timor",
+        "continent": "Asia",
+        "independence_date": "2002-05-20",
+        "leader": "President José Ramos-Horta",
+        "area_km2": 14874,
+        "population": 1387149,
+        "rank_by_area": 153
+    },
+    {
+        "name": "Ecuador",
+        "continent": "South America",
+        "independence_date": "1822-05-24",
+        "leader": "President Guillermo Lasso",
+        "area_km2": 283561,
+        "population": 17643060,
+        "rank_by_area": 73
+    },
+    {
+        "name": "Egypt",
+        "continent": "Africa",
+        "independence_date": "1922-02-28",
+        "leader": "President Abdel Fattah el-Sisi",
+        "area_km2": 1002450,
+        "population": 102334404,
+        "rank_by_area": 30
+    },
+    {
+        "name": "El Salvador",
+        "continent": "North America",
+        "independence_date": "1821-09-15",
+        "leader": "President Nayib Bukele",
+        "area_km2": 21041,
+        "population": 6486201,
+        "rank_by_area": 150
+    },
+    {
+        "name": "Equatorial Guinea",
+        "continent": "Africa",
+        "independence_date": "1968-10-12",
+        "leader": "President Teodoro Obiang Nguema Mbasogo",
+        "area_km2": 28051,
+        "population": 1402985,
+        "rank_by_area": 146
+    },
+    {
+        "name": "Eritrea",
+        "continent": "Africa",
+        "independence_date": "1993-05-24",
+        "leader": "President Isaias Afwerki",
+        "area_km2": 117600,
+        "population": 3546000,
+        "rank_by_area": 99
+    },
+    {
+        "name": "Estonia",
+        "continent": "Europe",
+        "independence_date": "1918-02-24",
+        "leader": "President Alar Karis",
+        "area_km2": 45227,
+        "population": 1326535,
+        "rank_by_area": 129
+    },
+    {
+        "name": "Eswatini",
+        "continent": "Africa",
+        "independence_date": "1968-09-06",
+        "leader": "King Mswati III",
+        "area_km2": 17364,
+        "population": 1160164,
+        "rank_by_area": 157
+    },
+    {
+        "name": "Ethiopia",
+        "continent": "Africa",
+        "independence_date": "n/a",
+        "leader": "Prime Minister Abiy Ahmed",
+        "area_km2": 1104300,
+        "population": 114963588,
+        "rank_by_area": 27
+    },
+    {
+        "name": "Fiji",
+        "continent": "Australia/Oceania",
+        "independence_date": "1970-10-10",
+        "leader": "Prime Minister Sitiveni Rabuka",
+        "area_km2": 18333,
+        "population": 896445,
+        "rank_by_area": 151
+    },
+    {
+        "name": "Finland",
+        "continent": "Europe",
+        "independence_date": "1917-12-06",
+        "leader": "President Sauli Niinistö",
+        "area_km2": 338145,
+        "population": 5540718,
+        "rank_by_area": 65
+    },
+    {
+        "name": "France",
+        "continent": "Europe",
+        "independence_date": "486-01-01",
+        "leader": "President Emmanuel Macron",
+        "area_km2": 551695,
+        "population": 65273511,
+        "rank_by_area": 42
+    },
+    {
+        "name": "Gabon",
+        "continent": "Africa",
+        "independence_date": "1960-08-17",
+        "leader": "President Ali Bongo Ondimba",
+        "area_km2": 267667,
+        "population": 2225734,
+        "rank_by_area": 74
+    },
+    {
+        "name": "Gambia",
+        "continent": "Africa",
+        "independence_date": "1965-02-18",
+        "leader": "President Adama Barrow",
+        "area_km2": 11295,
+        "population": 2416668,
+        "rank_by_area": 160
+    },
+    {
+        "name": "Georgia",
+        "continent": "Asia",
+        "independence_date": "1991-04-09",
+        "leader": "Prime Minister Irakli Garibashvili",
+        "area_km2": 69700,
+        "population": 3989167,
+        "rank_by_area": 121
+    },
+    {
+        "name": "Germany",
+        "continent": "Europe",
+        "independence_date": "1871-01-18",
+        "leader": "Chancellor Olaf Scholz",
+        "area_km2": 357114,
+        "population": 83783942,
+        "rank_by_area": 63
+    },
+    {
+        "name": "Ghana",
+        "continent": "Africa",
+        "independence_date": "1957-03-06",
+        "leader": "President Nana Akufo-Addo",
+        "area_km2": 238533,
+        "population": 31072940,
+        "rank_by_area": 81
+    },
+    {
+        "name": "Greece",
+        "continent": "Europe",
+        "independence_date": "1821-03-25",
+        "leader": "Prime Minister Kyriakos Mitsotakis",
+        "area_km2": 131957,
+        "population": 10423054,
+        "rank_by_area": 96
+    },
+    {
+        "name": "Grenada",
+        "continent": "North America",
+        "independence_date": "1974-02-07",
+        "leader": "Prime Minister Dickon Mitchell",
+        "area_km2": 344,
+        "population": 112523,
+        "rank_by_area": 204
+    },
+    {
+        "name": "Guatemala",
+        "continent": "North America",
+        "independence_date": "1821-09-15",
+        "leader": "President Alejandro Giammattei",
+        "area_km2": 108889,
+        "population": 17915568,
+        "rank_by_area": 106
+    },
+    {
+        "name": "Guinea",
+        "continent": "Africa",
+        "independence_date": "1958-10-02",
+        "leader": "President Mamady Doumbouya",
+        "area_km2": 245857,
+        "population": 13132792,
+        "rank_by_area": 79
+    },
+    {
+        "name": "Guinea-Bissau",
+        "continent": "Africa",
+        "independence_date": "1973-09-24",
+        "leader": "President Umaro Sissoco Embaló",
+        "area_km2": 36125,
+        "population": 1967998,
+        "rank_by_area": 136
+    },
+    {
+        "name": "Guyana",
+        "continent": "South America",
+        "independence_date": "1966-05-26",
+        "leader": "President Irfaan Ali",
+        "area_km2": 214969,
+        "population": 786552,
+        "rank_by_area": 83
+    },
+    {
+        "name": "Haiti",
+        "continent": "North America",
+        "independence_date": "1804-01-01",
+        "leader": "Prime Minister Ariel Henry",
+        "area_km2": 27750,
+        "population": 11402533,
+        "rank_by_area": 147
+    },
+    {
+        "name": "Honduras",
+        "continent": "North America",
+        "independence_date": "1821-09-15",
+        "leader": "President Xiomara Castro",
+        "area_km2": 112492,
+        "population": 9904608,
+        "rank_by_area": 99
+    },
+    {
+        "name": "Hungary",
+        "continent": "Europe",
+        "independence_date": "1918-11-16",
+        "leader": "Prime Minister Viktor Orbán",
+        "area_km2": 93028,
+        "population": 9769949,
+        "rank_by_area": 109
+    },
+    {
+        "name": "Iceland",
+        "continent": "Europe",
+        "independence_date": "1944-06-17",
+        "leader": "Prime Minister Katrín Jakobsdóttir",
+        "area_km2": 103000,
+        "population": 366425,
+        "rank_by_area": 106
+    },
+    {
+        "name": "India",
+        "continent": "Asia",
+        "independence_date": "1947-08-15",
+        "leader": "Prime Minister Narendra Modi",
+        "area_km2": 3287263,
+        "population": 1380004385,
+        "rank_by_area": 7
+    },
+    {
+        "name": "Indonesia",
+        "continent": "Asia",
+        "independence_date": "1945-08-17",
+        "leader": "President Joko Widodo",
+        "area_km2": 1904569,
+        "population": 273523621,
+        "rank_by_area": 14
+    },
+    {
+        "name": "Iran",
+        "continent": "Asia",
+        "independence_date": "1979-02-11",
+        "leader": "Supreme Leader Ali Khamenei",
+        "area_km2": 1648195,
+        "population": 83992953,
+        "rank_by_area": 18
+    },
+    {
+        "name": "Iraq",
+        "continent": "Asia",
+        "independence_date": "1932-10-03",
+        "leader": "President Barham Salih",
+        "area_km2": 438317,
+        "population": 40222493,
+        "rank_by_area": 58
+    },
+    {
+        "name": "Ireland",
+        "continent": "Europe",
+        "independence_date": "1922-12-06",
+        "leader": "Prime Minister Leo Varadkar",
+        "area_km2": 70273,
+        "population": 4977400,
+        "rank_by_area": 120
+    },
+    {
+        "name": "Israel",
+        "continent": "Asia",
+        "independence_date": "1948-05-14",
+        "leader": "Prime Minister Benjamin Netanyahu",
+        "area_km2": 20770,
+        "population": 9335600,
+        "rank_by_area": 151
+    },
+    {
+        "name": "Italy",
+        "continent": "Europe",
+        "independence_date": "1861-03-17",
+        "leader": "Prime Minister Giorgia Meloni",
+        "area_km2": 301340,
+        "population": 60317116,
+        "rank_by_area": 72
+    },
+    {
+        "name": "Jamaica",
+        "continent": "North America",
+        "independence_date": "1962-08-06",
+        "leader": "Prime Minister Andrew Holness",
+        "area_km2": 10991,
+        "population": 2961167,
+        "rank_by_area": 159
+    },
+    {
+        "name": "Japan",
+        "continent": "Asia",
+        "independence_date": "660 BCE-02-11",
+        "leader": "Prime Minister Fumio Kishida",
+        "area_km2": 377975,
+        "population": 126476458,
+        "rank_by_area": 62
+    },
+    {
+        "name": "Jordan",
+        "continent": "Asia",
+        "independence_date": "1946-05-25",
+        "leader": "King Abdullah II",
+        "area_km2": 89342,
+        "population": 10203140,
+        "rank_by_area": 112
+    },
+    {
+        "name": "Kazakhstan",
+        "continent": "Asia",
+        "independence_date": "1991-12-16",
+        "leader": "President Kassym-Jomart Tokayev",
+        "area_km2": 2724900,
+        "population": 18936467,
+        "rank_by_area": 9
+    },
+    {
+        "name": "Kenya",
+        "continent": "Africa",
+        "independence_date": "1963-12-12",
+        "leader": "President William Ruto",
+        "area_km2": 580367,
+        "population": 53771300,
+        "rank_by_area": 48
+    },
+    {
+        "name": "Kiribati",
+        "continent": "Australia/Oceania",
+        "independence_date": "1979-07-12",
+        "leader": "President Taneti Maamau",
+        "area_km2": 811,
+        "population": 119446,
+        "rank_by_area": 182
+    },
+    {
+        "name": "Kosovo",
+        "continent": "Europe",
+        "independence_date": "2008-02-17",
+        "leader": "President Vjosa Osmani",
+        "area_km2": 10887,
+        "population": 1831000,
+        "rank_by_area": 158
+    },
+    {
+        "name": "Kuwait",
+        "continent": "Asia",
+        "independence_date": "1961-06-19",
+        "leader": "Emir Nawaf Al-Ahmad Al-Jaber Al-Sabah",
+        "area_km2": 17818,
+        "population": 4420110,
+        "rank_by_area": 154
+    },
+    {
+        "name": "Kyrgyzstan",
+        "continent": "Asia",
+        "independence_date": "1991-08-31",
+        "leader": "President Sadyr Japarov",
+        "area_km2": 199951,
+        "population": 6524195,
+        "rank_by_area": 85
+    },
+    {
+        "name": "Laos",
+        "continent": "Asia",
+        "independence_date": "1954-10-22",
+        "leader": "President Thongloun Sisoulith",
+        "area_km2": 236800,
+        "population": 7275560,
+        "rank_by_area": 81
+    },
+    {
+        "name": "Latvia",
+        "continent": "Europe",
+        "independence_date": "1918-11-18",
+        "leader": "President Edgars Rinkēvičs",
+        "area_km2": 64559,
+        "population": 1901548,
+        "rank_by_area": 122
+    },
+    {
+        "name": "Lebanon",
+        "continent": "Asia",
+        "independence_date": "1943-11-22",
+        "leader": "President Michel Aoun",
+        "area_km2": 10452,
+        "population": 6825442,
+        "rank_by_area": 161
+    },
+    {
+        "name": "Lesotho",
+        "continent": "Africa",
+        "independence_date": "1966-10-04",
+        "leader": "Prime Minister Moeketsi Majoro",
+        "area_km2": 30355,
+        "population": 2142249,
+        "rank_by_area": 138
+    },
+    {
+        "name": "Liberia",
+        "continent": "Africa",
+        "independence_date": "1847-07-26",
+        "leader": "President George Weah",
+        "area_km2": 111369,
+        "population": 5057681,
+        "rank_by_area": 104
+    },
+    {
+        "name": "Libya",
+        "continent": "Africa",
+        "independence_date": "1951-12-24",
+        "leader": "Prime Minister Abdul Hamid Dbeibeh",
+        "area_km2": 1759540,
+        "population": 6871292,
+        "rank_by_area": 16
+    },
+    {
+        "name": "Liechtenstein",
+        "continent": "Europe",
+        "independence_date": "1866-07-12",
+        "leader": "Prince Hans-Adam II",
+        "area_km2": 160,
+        "population": 38749,
+        "rank_by_area": 220
+    },
+    {
+        "name": "Lithuania",
+        "continent": "Europe",
+        "independence_date": "1990-03-11",
+        "leader": "President Gitanas Nausėda",
+        "area_km2": 65300,
+        "population": 2794174,
+        "rank_by_area": 123
+    },
+    {
+        "name": "Luxembourg",
+        "continent": "Europe",
+        "independence_date": "1815-03-15",
+        "leader": "Grand Duke Henri",
+        "area_km2": 2586,
+        "population": 634814,
+        "rank_by_area": 167
+    },
+    {
+        "name": "Madagascar",
+        "continent": "Africa",
+        "independence_date": "1960-06-26",
+        "leader": "President Andry Rajoelina",
+        "area_km2": 587041,
+        "population": 27691018,
+        "rank_by_area": 47
+    },
+    {
+        "name": "Malawi",
+        "continent": "Africa",
+        "independence_date": "1964-07-06",
+        "leader": "President Lazarus Chakwera",
+        "area_km2": 118484,
+        "population": 19129952,
+        "rank_by_area": 98
+    },
+    {
+        "name": "Malaysia",
+        "continent": "Asia",
+        "independence_date": "1957-08-31",
+        "leader": "Prime Minister Anwar Ibrahim",
+        "area_km2": 330803,
+        "population": 32365998,
+        "rank_by_area": 66
+    },
+    {
+        "name": "Maldives",
+        "continent": "Asia",
+        "independence_date": "1965-07-26",
+        "leader": "President Ibrahim Mohamed Solih",
+        "area_km2": 298,
+        "population": 540542,
+        "rank_by_area": 206
+    },
+    {
+        "name": "Mali",
+        "continent": "Africa",
+        "independence_date": "1960-09-22",
+        "leader": "President Assimi Goïta",
+        "area_km2": 1240192,
+        "population": 20250834,
+        "rank_by_area": 23
+    },
+    {
+        "name": "Malta",
+        "continent": "Europe",
+        "independence_date": "1964-09-21",
+        "leader": "President George Vella",
+        "area_km2": 316,
+        "population": 514564,
+        "rank_by_area": 204
+    },
+    {
+        "name": "Marshall Islands",
+        "continent": "Australia/Oceania",
+        "independence_date": "1986-10-21",
+        "leader": "President David Kabua",
+        "area_km2": 181,
+        "population": 59194,
+        "rank_by_area": 221
+    },
+    {
+        "name": "Mauritania",
+        "continent": "Africa",
+        "independence_date": "1960-11-28",
+        "leader": "President Mohamed Ould Ghazouani",
+        "area_km2": 1030700,
+        "population": 4649660,
+        "rank_by_area": 29
+    },
+    {
+        "name": "Mauritius",
+        "continent": "Africa",
+        "independence_date": "1968-03-12",
+        "leader": "Prime Minister Pravind Jugnauth",
+        "area_km2": 2040,
+        "population": 1265740,
+        "rank_by_area": 170
+    },
+    {
+        "name": "Mexico",
+        "continent": "North America",
+        "independence_date": "1821-09-16",
+        "leader": "President Andrés Manuel López Obrador",
+        "area_km2": 1964375,
+        "population": 128932753,
+        "rank_by_area": 14
+    },
+    {
+        "name": "Micronesia",
+        "continent": "Australia/Oceania",
+        "independence_date": "1986-11-03",
+        "leader": "President David W. Panuelo",
+        "area_km2": 702,
+        "population": 115021,
+        "rank_by_area": 195
+    },
+    {
+        "name": "Moldova",
+        "continent": "Europe",
+        "independence_date": "1991-08-27",
+        "leader": "President Maia Sandu",
+        "area_km2": 33846,
+        "population": 2632325,
+        "rank_by_area": 135
+    },
+    {
+        "name": "Monaco",
+        "continent": "Europe",
+        "independence_date": "1297-01-08",
+        "leader": "Prince Albert II",
+        "area_km2": 2,
+        "population": 39242,
+        "rank_by_area": 235
+    },
+    {
+        "name": "Mongolia",
+        "continent": "Asia",
+        "independence_date": "1911-12-29",
+        "leader": "President Ukhnaagiin Khürelsükh",
+        "area_km2": 1564116,
+        "population": 3278290,
+        "rank_by_area": 18
+    },
+    {
+        "name": "Montenegro",
+        "continent": "Europe",
+        "independence_date": "2006-06-03",
+        "leader": "President Jakov Milatović",
+        "area_km2": 13812,
+        "population": 622359,
+        "rank_by_area": 160
+    },
+    {
+        "name": "Morocco",
+        "continent": "Africa",
+        "independence_date": "1956-03-02",
+        "leader": "King Mohammed VI",
+        "area_km2": 446550,
+        "population": 36910560,
+        "rank_by_area": 57
+    },
+    {
+        "name": "Mozambique",
+        "continent": "Africa",
+        "independence_date": "1975-06-25",
+        "leader": "President Filipe Nyusi",
+        "area_km2": 801590,
+        "population": 31255435,
+        "rank_by_area": 36
+    },
+    {
+        "name": "Myanmar",
+        "continent": "Asia",
+        "independence_date": "1948-01-04",
+        "leader": "Prime Minister Min Aung Hlaing",
+        "area_km2": 676578,
+        "population": 54409794,
+        "rank_by_area": 40
+    },
+    {
+        "name": "Namibia",
+        "continent": "Africa",
+        "independence_date": "1990-03-21",
+        "leader": "President Hage Geingob",
+        "area_km2": 825615,
+        "population": 2540916,
+        "rank_by_area": 34
+    },
+    {
+        "name": "Nauru",
+        "continent": "Australia/Oceania",
+        "independence_date": "1968-01-31",
+        "leader": "President Russ Kun",
+        "area_km2": 21,
+        "population": 10834,
+        "rank_by_area": 233
+    },
+    {
+        "name": "Nepal",
+        "continent": "Asia",
+        "independence_date": "1768-01-01",
+        "leader": "President Ram Chandra Poudel",
+        "area_km2": 147516,
+        "population": 29609623,
+        "rank_by_area": 93
+    },
+    {
+        "name": "Netherlands",
+        "continent": "Europe",
+        "independence_date": "1581-07-26",
+        "leader": "Prime Minister Mark Rutte",
+        "area_km2": 41543,
+        "population": 17134873,
+        "rank_by_area": 131
+    },
+    {
+        "name": "New Zealand",
+        "continent": "Australia/Oceania",
+        "independence_date": "1907-09-26",
+        "leader": "Prime Minister Chris Hipkins",
+        "area_km2": 268021,
+        "population": 5084300,
+        "rank_by_area": 75
+    },
+    {
+        "name": "Nicaragua",
+        "continent": "North America",
+        "independence_date": "1821-09-15",
+        "leader": "President Daniel Ortega",
+        "area_km2": 130373,
+        "population": 6624554,
+        "rank_by_area": 97
+    },
+    {
+        "name": "Niger",
+        "continent": "Africa",
+        "independence_date": "1960-08-03",
+        "leader": "President Mohamed Bazoum",
+        "area_km2": 1267000,
+        "population": 24206636,
+        "rank_by_area": 21
+    },
+    {
+        "name": "Nigeria",
+        "continent": "Africa",
+        "independence_date": "1960-10-01",
+        "leader": "President Muhammadu Buhari",
+        "area_km2": 923768,
+        "population": 206139587,
+        "rank_by_area": 32
+    },
+    {
+        "name": "North Korea",
+        "continent": "Asia",
+        "independence_date": "1948-09-09",
+        "leader": "Supreme Leader Kim Jong-un",
+        "area_km2": 120540,
+        "population": 25778815,
+        "rank_by_area": 99
+    },
+    {
+        "name": "North Macedonia",
+        "continent": "Europe",
+        "independence_date": "1991-09-08",
+        "leader": "President Stevo Pendarovski",
+        "area_km2": 25713,
+        "population": 2077000,
+        "rank_by_area": 145
+    },
+    {
+        "name": "Norway",
+        "continent": "Europe",
+        "independence_date": "1905-06-07",
+        "leader": "Prime Minister Jonas Gahr Støre",
+        "area_km2": 385207,
+        "population": 5421241,
+        "rank_by_area": 67
+    },
+    {
+        "name": "Oman",
+        "continent": "Asia",
+        "independence_date": "1650-01-01",
+        "leader": "Sultan Haitham bin Tariq",
+        "area_km2": 309500,
+        "population": 5106626,
+        "rank_by_area": 73
+    },
+    {
+        "name": "Pakistan",
+        "continent": "Asia",
+        "independence_date": "1947-08-14",
+        "leader": "President Arif Alvi",
+        "area_km2": 881913,
+        "population": 220892331,
+        "rank_by_area": 34
+    },
+    {
+        "name": "Palau",
+        "continent": "Australia/Oceania",
+        "independence_date": "1994-10-01",
+        "leader": "President Surangel Whipps Jr.",
+        "area_km2": 459,
+        "population": 18092,
+        "rank_by_area": 212
+    },
+    {
+        "name": "Palestine",
+        "continent": "Asia",
+        "independence_date": "1988-11-15",
+        "leader": "President Mahmoud Abbas",
+        "area_km2": 6220,
+        "population": 4682467,
+        "rank_by_area": 165
+    },
+    {
+        "name": "Panama",
+        "continent": "North America",
+        "independence_date": "1903-11-03",
+        "leader": "President Laurentino Cortizo",
+        "area_km2": 75420,
+        "population": 4314767,
+        "rank_by_area": 118
+    },
+    {
+        "name": "Papua New Guinea",
+        "continent": "Australia/Oceania",
+        "independence_date": "1975-09-16",
+        "leader": "Prime Minister James Marape",
+        "area_km2": 462840,
+        "population": 8947027,
+        "rank_by_area": 54
+    },
+    {
+        "name": "Paraguay",
+        "continent": "South America",
+        "independence_date": "1811-05-14",
+        "leader": "President Mario Abdo Benítez",
+        "area_km2": 406752,
+        "population": 7152703,
+        "rank_by_area": 60
+    },
+    {
+        "name": "Peru",
+        "continent": "South America",
+        "independence_date": "1821-07-28",
+        "leader": "President Dina Boluarte",
+        "area_km2": 1285216,
+        "population": 32971846,
+        "rank_by_area": 20
+    },
+    {
+        "name": "Philippines",
+        "continent": "Asia",
+        "independence_date": "1946-07-04",
+        "leader": "President Ferdinand Marcos Jr.",
+        "area_km2": 300000,
+        "population": 109581085,
+        "rank_by_area": 72
+    },
+    {
+        "name": "Poland",
+        "continent": "Europe",
+        "independence_date": "1918-11-11",
+        "leader": "President Andrzej Duda",
+        "area_km2": 312696,
+        "population": 38386000,
+        "rank_by_area": 69
+    },
+    {
+        "name": "Portugal",
+        "continent": "Europe",
+        "independence_date": "1143-10-05",
+        "leader": "President Marcelo Rebelo de Sousa",
+        "area_km2": 92212,
+        "population": 10295909,
+        "rank_by_area": 109
+    },
+    {
+        "name": "Qatar",
+        "continent": "Asia",
+        "independence_date": "1971-09-03",
+        "leader": "Emir Tamim bin Hamad Al Thani",
+        "area_km2": 11586,
+        "population": 2807805,
+        "rank_by_area": 153
+    },
+    {
+        "name": "Republic of the Congo",
+        "continent": "Africa",
+        "independence_date": "1960-08-15",
+        "leader": "President Denis Sassou Nguesso",
+        "area_km2": 342000,
+        "population": 5518092,
+        "rank_by_area": 65
+    },
+    {
+        "name": "Romania",
+        "continent": "Europe",
+        "independence_date": "1877-05-09",
+        "leader": "President Klaus Iohannis",
+        "area_km2": 238397,
+        "population": 19237691,
+        "rank_by_area": 83
+    },
+    {
+        "name": "Russia",
+        "continent": "Europe/Asia",
+        "independence_date": "1991-12-25",
+        "leader": "President Vladimir Putin",
+        "area_km2": 17098246,
+        "population": 144373535,
+        "rank_by_area": 1
+    },
+    {
+        "name": "Rwanda",
+        "continent": "Africa",
+        "independence_date": "1962-07-01",
+        "leader": "President Paul Kagame",
+        "area_km2": 26338,
+        "population": 12952218,
+        "rank_by_area": 144
+    },
+    {
+        "name": "Saint Kitts and Nevis",
+        "continent": "North America",
+        "independence_date": "1983-09-19",
+        "leader": "Prime Minister Terrance Drew",
+        "area_km2": 261,
+        "population": 52823,
+        "rank_by_area": 212
+    },
+    {
+        "name": "Saint Lucia",
+        "continent": "North America",
+        "independence_date": "1979-02-22",
+        "leader": "Prime Minister Philip J. Pierre",
+        "area_km2": 617,
+        "population": 183627,
+        "rank_by_area": 201
+    },
+    {
+        "name": "Saint Vincent and the Grenadines",
+        "continent": "North America",
+        "independence_date": "1979-10-27",
+        "leader": "Prime Minister Ralph Gonsalves",
+        "area_km2": 389,
+        "population": 110608,
+        "rank_by_area": 204
+    },
+    {
+        "name": "Samoa",
+        "continent": "Australia/Oceania",
+        "independence_date": "1962-01-01",
+        "leader": "Prime Minister Fiamē Naomi Mataʻafa",
+        "area_km2": 2831,
+        "population": 198410,
+        "rank_by_area": 177
+    },
+    {
+        "name": "San Marino",
+        "continent": "Europe",
+        "independence_date": "301-09-03",
+        "leader": "Captains Regent Alessandro Scarano and Adele Tonnini",
+        "area_km2": 61,
+        "population": 33832,
+        "rank_by_area": 233
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "continent": "Africa",
+        "independence_date": "1975-07-12",
+        "leader": "President Carlos Vila Nova",
+        "area_km2": 964,
+        "population": 223364,
+        "rank_by_area": 189
+    },
+    {
+        "name": "Saudi Arabia",
+        "continent": "Asia",
+        "independence_date": "1932-09-23",
+        "leader": "King Salman",
+        "area_km2": 2149690,
+        "population": 34813867,
+        "rank_by_area": 13
+    },
+    {
+        "name": "Senegal",
+        "continent": "Africa",
+        "independence_date": "1960-04-04",
+        "leader": "President Macky Sall",
+        "area_km2": 196722,
+        "population": 16743927,
+        "rank_by_area": 87
+    },
+    {
+        "name": "Serbia",
+        "continent": "Europe",
+        "independence_date": "2006-06-05",
+        "leader": "President Aleksandar Vučić",
+        "area_km2": 77474,
+        "population": 6814423,
+        "rank_by_area": 114
+    },
+    {
+        "name": "Seychelles",
+        "continent": "Africa",
+        "independence_date": "1976-06-29",
+        "leader": "President Wavel Ramkalawan",
+        "area_km2": 459,
+        "population": 98340,
+        "rank_by_area": 205
+    },
+    {
+        "name": "Sierra Leone",
+        "continent": "Africa",
+        "independence_date": "1961-04-27",
+        "leader": "President Julius Maada Bio",
+        "area_km2": 71740,
+        "population": 7976983,
+        "rank_by_area": 120
+    },
+    {
+        "name": "Singapore",
+        "continent": "Asia",
+        "independence_date": "1965-08-09",
+        "leader": "Prime Minister Lee Hsien Loong",
+        "area_km2": 728,
+        "population": 5703569,
+        "rank_by_area": 196
+    },
+    {
+        "name": "Slovakia",
+        "continent": "Europe",
+        "independence_date": "1993-01-01",
+        "leader": "President Zuzana Čaputová",
+        "area_km2": 49035,
+        "population": 5456362,
+        "rank_by_area": 128
+    },
+    {
+        "name": "Slovenia",
+        "continent": "Europe",
+        "independence_date": "1991-06-25",
+        "leader": "President Borut Pahor",
+        "area_km2": 20273,
+        "population": 2078654,
+        "rank_by_area": 151
+    },
+    {
+        "name": "Solomon Islands",
+        "continent": "Australia/Oceania",
+        "independence_date": "1978-07-07",
+        "leader": "Prime Minister Manasseh Sogavare",
+        "area_km2": 28896,
+        "population": 686878,
+        "rank_by_area": 141
+    },
+    {
+        "name": "Somalia",
+        "continent": "Africa",
+        "independence_date": "1960-07-01",
+        "leader": "President Mohamed Abdullahi Mohamed",
+        "area_km2": 637657,
+        "population": 15893222,
+        "rank_by_area": 42
+    },
+    {
+        "name": "South Africa",
+        "continent": "Africa",
+        "independence_date": "1910-05-31",
+        "leader": "President Cyril Ramaphosa",
+        "area_km2": 1221037,
+        "population": 59308690,
+        "rank_by_area": 25
+    },
+    {
+        "name": "South Korea",
+        "continent": "Asia",
+        "independence_date": "1945-08-15",
+        "leader": "President Yoon Suk-yeol",
+        "area_km2": 100363,
+        "population": 51780579,
+        "rank_by_area": 107
+    },
+    {
+        "name": "South Sudan",
+        "continent": "Africa",
+        "independence_date": "2011-07-09",
+        "leader": "President Salva Kiir Mayardit",
+        "area_km2": 619745,
+        "population": 11193725,
+        "rank_by_area": 43
+    },
+    {
+        "name": "Spain",
+        "continent": "Europe",
+        "independence_date": "1516-01-23",
+        "leader": "Prime Minister Pedro Sánchez",
+        "area_km2": 505990,
+        "population": 47351567,
+        "rank_by_area": 51
+    },
+    {
+        "name": "Sri Lanka",
+        "continent": "Asia",
+        "independence_date": "1948-02-04",
+        "leader": "President Ranil Wickremesinghe",
+        "area_km2": 65610,
+        "population": 21803000,
+        "rank_by_area": 122
+    },
+    {
+        "name": "Sudan",
+        "continent": "Africa",
+        "independence_date": "1956-01-01",
+        "leader": "Chairman of the Sovereignty Council Abdel Fattah al-Burhan",
+        "area_km2": 1861484,
+        "population": 43849260,
+        "rank_by_area": 16
+    },
+    {
+        "name": "Suriname",
+        "continent": "South America",
+        "independence_date": "1975-11-25",
+        "leader": "President Chandrikapersad Santokhi",
+        "area_km2": 163820,
+        "population": 586632,
+        "rank_by_area": 91
+    },
+    {
+        "name": "Sweden",
+        "continent": "Europe",
+        "independence_date": "1523-06-06",
+        "leader": "Prime Minister Ulf Kristersson",
+        "area_km2": 450295,
+        "population": 10353442,
+        "rank_by_area": 55
+    },
+    {
+        "name": "Switzerland",
+        "continent": "Europe",
+        "independence_date": "1291-08-01",
+        "leader": "President Alain Berset",
+        "area_km2": 41285,
+        "population": 8654618,
+        "rank_by_area": 132
+    },
+    {
+        "name": "Syria",
+        "continent": "Asia",
+        "independence_date": "1946-04-17",
+        "leader": "President Bashar al-Assad",
+        "area_km2": 185180,
+        "population": 17500657,
+        "rank_by_area": 88
+    },
+    {
+        "name": "Tajikistan",
+        "continent": "Asia",
+        "independence_date": "1991-09-09",
+        "leader": "President Emomali Rahmon",
+        "area_km2": 143100,
+        "population": 9537642,
+        "rank_by_area": 95
+    },
+    {
+        "name": "Tanzania",
+        "continent": "Africa",
+        "independence_date": "1961-12-09",
+        "leader": "President Samia Suluhu Hassan",
+        "area_km2": 945087,
+        "population": 59734218,
+        "rank_by_area": 30
+    },
+    {
+        "name": "Thailand",
+        "continent": "Asia",
+        "independence_date": "1238-06-23",
+        "leader": "Prime Minister Prayut Chan-o-cha",
+        "area_km2": 513120,
+        "population": 69950858,
+        "rank_by_area": 50
+    },
+    {
+        "name": "Timor-Leste",
+        "continent": "Asia",
+        "independence_date": "2002-05-20",
+        "leader": "President José Ramos-Horta",
+        "area_km2": 14874,
+        "population": 1387149,
+        "rank_by_area": 158
+    },
+    {
+        "name": "Togo",
+        "continent": "Africa",
+        "independence_date": "1960-04-27",
+        "leader": "President Faure Gnassingbé",
+        "area_km2": 56785,
+        "population": 8278724,
+        "rank_by_area": 124
+    },
+    {
+        "name": "Tonga",
+        "continent": "Australia/Oceania",
+        "independence_date": "1970-06-04",
+        "leader": "King Tupou VI",
+        "area_km2": 747,
+        "population": 104494,
+        "rank_by_area": 198
+    },
+    {
+        "name": "Trinidad and Tobago",
+        "continent": "North America",
+        "independence_date": "1962-08-31",
+        "leader": "President Christine Kangaloo",
+        "area_km2": 5128,
+        "population": 1399488,
+        "rank_by_area": 166
+    },
+    {
+        "name": "Tunisia",
+        "continent": "Africa",
+        "independence_date": "1956-03-20",
+        "leader": "President Kais Saied",
+        "area_km2": 163610,
+        "population": 11962442,
+        "rank_by_area": 90
+    },
+    {
+        "name": "Turkey",
+        "continent": "Europe/Asia",
+        "independence_date": "1923-10-29",
+        "leader": "President Recep Tayyip Erdoğan",
+        "area_km2": 783562,
+        "population": 84339067,
+        "rank_by_area": 36
+    },
+    {
+        "name": "Turkmenistan",
+        "continent": "Asia",
+        "independence_date": "1991-10-27",
+        "leader": "President Serdar Berdimuhamedow",
+        "area_km2": 488100,
+        "population": 6031187,
+        "rank_by_area": 52
+    },
+    {
+        "name": "Tuvalu",
+        "continent": "Australia/Oceania",
+        "independence_date": "1978-10-01",
+        "leader": "Prime Minister Kausea Natano",
+        "area_km2": 26,
+        "population": 11792,
+        "rank_by_area": 227
+    },
+    {
+        "name": "Uganda",
+        "continent": "Africa",
+        "independence_date": "1962-10-09",
+        "leader": "President Yoweri Museveni",
+        "area_km2": 241038,
+        "population": 45741000,
+        "rank_by_area": 80
+    },
+    {
+        "name": "Ukraine",
+        "continent": "Europe",
+        "independence_date": "1991-08-24",
+        "leader": "President Volodymyr Zelenskyy",
+        "area_km2": 603550,
+        "population": 41732779,
+        "rank_by_area": 45
+    },
+    {
+        "name": "United Arab Emirates",
+        "continent": "Asia",
+        "independence_date": "1971-12-02",
+        "leader": "President Mohamed bin Zayed Al Nahyan",
+        "area_km2": 83600,
+        "population": 9890402,
+        "rank_by_area": 116
+    },
+    {
+        "name": "United Kingdom",
+        "continent": "Europe",
+        "independence_date": "1707-05-01",
+        "leader": "Prime Minister Rishi Sunak",
+        "area_km2": 243610,
+        "population": 67215293,
+        "rank_by_area": 78
+    },
+    {
+        "name": "United States",
+        "continent": "North America",
+        "independence_date": "1776-07-04",
+        "leader": "President Joe Biden",
+        "area_km2": 9833517,
+        "population": 331002651,
+        "rank_by_area": 3
+    },
+    {
+        "name": "Uruguay",
+        "continent": "South America",
+        "independence_date": "1825-08-25",
+        "leader": "President Luis Lacalle Pou",
+        "area_km2": 176215,
+        "population": 3473727,
+        "rank_by_area": 89
+    },
+    {
+        "name": "Uzbekistan",
+        "continent": "Asia",
+        "independence_date": "1991-08-31",
+        "leader": "President Shavkat Mirziyoyev",
+        "area_km2": 448978,
+        "population": 34232050,
+        "rank_by_area": 56
+    },
+    {
+        "name": "Vanuatu",
+        "continent": "Australia/Oceania",
+        "independence_date": "1980-07-30",
+        "leader": "President Nikenike Vurobaravu",
+        "area_km2": 12189,
+        "population": 307815,
+        "rank_by_area": 159
+    },
+    {
+        "name": "Vatican City",
+        "continent": "Europe",
+        "independence_date": "1929-02-11",
+        "leader": "Pope Francis",
+        "area_km2": 0.49,
+        "population": 825,
+        "rank_by_area": 234
+    },
+    {
+        "name": "Venezuela",
+        "continent": "South America",
+        "independence_date": "1811-07-05",
+        "leader": "President Nicolás Maduro",
+        "area_km2": 916445,
+        "population": 28435943,
+        "rank_by_area": 32
+    },
+    {
+        "name": "Vietnam",
+        "continent": "Asia",
+        "independence_date": "1945-09-02",
+        "leader": "President Võ Văn Thưởng",
+        "area_km2": 331212,
+        "population": 96462106,
+        "rank_by_area": 66
+    },
+    {
+        "name": "Yemen",
+        "continent": "Asia",
+        "independence_date": "1990-05-22",
+        "leader": "President Rashad al-Alimi",
+        "area_km2": 527968,
+        "population": 29825968,
+        "rank_by_area": 49
+    },
+    {
+        "name": "Zambia",
+        "continent": "Africa",
+        "independence_date": "1964-10-24",
+        "leader": "President Hakainde Hichilema",
+        "area_km2": 752612,
+        "population": 18383955,
+        "rank_by_area": 39
+    },
+    {
+        "name": "Zimbabwe",
+        "continent": "Africa",
+        "independence_date": "1980-04-18",
+        "leader": "President Emmerson Mnangagwa",
+        "area_km2": 390757,
+        "population": 14862924,
+        "rank_by_area": 61
+    }
+]
