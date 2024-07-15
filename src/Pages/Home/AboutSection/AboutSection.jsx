@@ -25,7 +25,7 @@ const AboutSection = () => {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse commodi laborum est illo fugit cum rem dicta doloribus unde!
                                 </p>
                                 <button className=' mt-10  max-w-40    px-[1em] py-[0.5em] text-sm lg:text-xl hover:bg-amber-700 transition-all duration-100 bg-amber-600'>
-                                    Let's work
+                                    Learn more
                                 </button>
                 </div>
               <div className='bg-slate-200 w-full lg:h-[800px] mt-16 '>

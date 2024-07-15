@@ -6,6 +6,7 @@ import ServicesSection from './ServicesSection/ServicesSection';
 import TeamSection from './Team/TeamSection';
 import LetestWork from './LetestWork/LetestWork';
 import HowIWork from './HowIWork/HowIWork';
+import Started from './Started/Started';
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
 <ServicesSection/>
 <LetestWork/>
 <HowIWork/>
+<Started/>
 <TeamSection/>
 
 
