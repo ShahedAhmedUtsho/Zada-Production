@@ -67,6 +67,7 @@ const HowIWork = () => {
 
     </div>
     <div className="  w-full bg-slate-700  ">
+        <img className='object-cover w-full h-full' src="https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/crztbawm7ktgtyhtl6cn" alt="" />
 
 </div>
 
