@@ -18,7 +18,7 @@ const Footer = () => {
 
 <div className="border min-h-40 flex justify-center   items-center">
 <p className="dm md:relative uppercase text-center   md:pr-5 text-sm md:text-base lg:text-2xl leading-relaxed tracking-widest mb-4">
-Development in progress wit Utsho <Settings size={30} className='  mx-3 mb-1 rotating-element'/>
+Development in progress with Utsho <Settings size={30} className='  mx-3 mb-1 rotating-element'/>
                         </p>
    
 </div>
