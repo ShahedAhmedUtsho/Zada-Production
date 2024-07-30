@@ -12,8 +12,8 @@ const Bannar = () => {
                         <h2 className="syne  text-amber-600 text-center text-5xl md:text-7xl lg:text-[8.9vw] md:relative lg:left-20 md:left-16 left-10 text-outline font-bold leading-tight tracking-tight mb-4">
                             Production
                         </h2>
-                        <p className="dm md:relative  lg:pl-32 md:pr-5 md:pl-20 pl-10 text-sm md:text-base text-amber-600 leading-relaxed tracking-widest mb-4">
-                            PHOTOGRAPHER & VISUAL ARTIST
+                        <p className="dm md:relative uppercase  lg:pl-32 md:pr-5 md:pl-20 pl-10 text-sm md:text-base text-amber-600 leading-relaxed tracking-widest mb-4">
+                        Grow your business With Zada
                         </p>
                         <div className="lg:min-h-52 min-h-64  flex  flex-col  lg:gap-0 gap-0 lg:flex-row mt-auto">
                             <div className="relative  h-full   w-full md:w-8/12 lg:w-5/12 md:pr-3 md:pb-3">

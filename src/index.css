@@ -243,3 +243,20 @@ body {
   z-index: 1;
   /* Ensure content is above the overlay */
 }
+
+
+/* Define the rotating animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to an element */
+.rotating-element {
+  display: inline-block; /* Ensure the element can be animated */
+  animation: rotate 2s linear infinite; /* Rotate over 2 seconds, infinitely */
+}

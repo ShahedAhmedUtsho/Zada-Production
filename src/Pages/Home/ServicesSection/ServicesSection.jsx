@@ -3,6 +3,10 @@ import React from 'react';
 const ServicesSection = () => {
     const services = [
         {
+            title: "Digital Marketing",
+            description: "Maximize your online presence with our digital marketing strategies, including SEO, social media management, content marketing, and PPC campaigns. Our goal is to drive traffic and boost conversions."
+        },
+        {
             title: "Photography",
             description: "Our photography services capture your brand's essence with stunning visuals. We specialize in corporate portraits, product shots, and event coverage using the latest techniques and equipment."
         },
@@ -21,11 +25,8 @@ const ServicesSection = () => {
         {
             title: "Editing",
             description: "Enhance your visual content with our professional editing services. Our editors refine your photos and videos, focusing on details to ensure they meet the highest quality standards."
-        },
-        {
-            title: "Digital Marketing",
-            description: "Maximize your online presence with our digital marketing strategies, including SEO, social media management, content marketing, and PPC campaigns. Our goal is to drive traffic and boost conversions."
         }
+        
     ];
     
     

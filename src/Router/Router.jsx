@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 
 const Router = () => {
     const location = useLocation() ; 
@@ -29,6 +30,7 @@ if(isHave){
         <div className='min-h-screen   flex text-white   bg-[#1c1c1c] flex-col'>
          {hide ||   <Header/>}
             <Outlet/>
+            {hide ||   <Footer/>}
             
         </div>
     );
