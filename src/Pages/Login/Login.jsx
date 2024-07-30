@@ -1,9 +1,10 @@
 import React from 'react';
+import Footer from '../../Components/Footer/Footer';
 
 const Login = () => {
     return (
-        <div>
-            
+        <div className='mt-[10%]'>
+            <Footer></Footer>
         </div>
     );
 };

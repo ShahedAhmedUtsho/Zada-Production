@@ -31,8 +31,8 @@ const Bannar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='md:w-7/12 overflow-hidden md:max-h-screen lg:max-h-none md:h-[80vh] lg:h-full'>
-                        <img src="https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/snpo67xklz3xfyshvfy4" alt="" className="object-cover h-full " />
+                    <div className='md:w-7/12 overflow-hidden md:max-h-screen lg:max-h-[1200px] md:h-[80vh] lg:h-full'>
+                        <img src="https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/snpo67xklz3xfyshvfy4" alt="" className="object-cover h-full w-full " />
                     </div>
                 </div>
             </div>

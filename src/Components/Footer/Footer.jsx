@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='mt-auto min-h-96 flex flex-col '>
-           <div className='lg:container md:mx-8 mx-4 lg:mx-auto  min-h-96 w-full  '>
+           <div className='lg:container md:mx-8 mx-4 lg:mx-auto  min-h-96   '>
           
 
    
@@ -16,7 +16,7 @@ const Footer = () => {
                         </p>
    
 
-<div className="border min-h-40 flex justify-center   items-center">
+<div className="border min-h-40 flex justify-center  flex-wrap  items-center">
 <p className="dm md:relative uppercase text-center   md:pr-5 text-sm md:text-base lg:text-2xl leading-relaxed tracking-widest mb-4">
 Development in progress with Utsho <Settings size={30} className='  mx-3 mb-1 rotating-element'/>
                         </p>
