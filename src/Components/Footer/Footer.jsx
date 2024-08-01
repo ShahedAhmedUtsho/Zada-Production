@@ -57,11 +57,10 @@ const Footer = () => {
         <p className="dm md:relative uppercase   md:pr-5 text-sm md:text-base text-amber-600 leading-relaxed tracking-widest mb-4">
           Grow your business With Zada
         </p>
-        <div className=" min-h-40 mt-16 grid grid-cols-4 gap-2  justify-between  flex-wrap  items-center">
+        <div className="  min-h-40 mt-16 gap-5 lg:gap-2 grid md:grid-cols-2  lg:grid-cols-4   justify-between  flex-wrap  items-center">
           {data.map((item, index) => (
-            <div className=" h-full  " key={index + item.title}>
-              <h5 className="syne text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight mb-4">
-                {" "}
+            <div className=" h-full  w-full     " key={index + item.title}>
+              <h5 className="syne text-xl  lg:text-2xl font-medium leading-snug tracking-tight mb-4">
                 {item.title}
               </h5>
               {index === data.length - 1 && lastItem}

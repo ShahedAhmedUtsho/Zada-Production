@@ -1,17 +1,48 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import { Eye, EyeOff } from "lucide-react";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [eye, setEye] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const errors = {};
+
+    if (!email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Email is invalid";
+    }
+    if (!password) {
+      errors.password = "Password is required";
+    } else if (password.length < 6) {
+      errors.password = "Password must be at least 6 characters";
+    }
+    return errors;
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
+    const validationError = validate();
+    if (Object.keys(validationError).length > 0) {
+      setErrors(validationError);
+    } else {
+      console.log(email, password);
+    }
     // Add login logic here
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1a1a1a] text-white">
+    <div className="flex flex-col relative items-center justify-center min-h-screen bg-[#1a1a1a] text-white">
+      <Link
+        to="/"
+        className="syne  absolute right-5 bottom-5  text-2xl md:text-3xl lg:text-4xl text-white  "
+      >
+        Zada
+      </Link>
+
       <div className="w-full max-w-md p-8 space-y-8 bg-gray-800 rounded-lg shadow-md">
         <h2 className="syne text-3xl md:text-4xl lg:text-5xl font-bold text-center">
           Login
@@ -26,37 +57,60 @@ const Login = () => {
             </label>
             <input
               id="email"
-              type="email"
-              required
+              type="text"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 focus:ring-amber-600 sm:text-sm"
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setErrors((prev) => ({ ...prev, email: "" }));
+              }}
+              className={` mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.email && "border-red-600"} focus:ring-amber-600 sm:text-sm `}
             />
+            {errors.email && (
+              <p className="mt-1 text-xs text-red-600">{errors.email}</p>
+            )}
           </div>
-          <div>
+          <div className=" relative">
             <label
               htmlFor="password"
               className="block text-sm font-medium text-gray-300"
-            >
-              Password
-            </label>
-            <input
-              id="password"
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 focus:ring-amber-600 sm:text-sm"
-            />
+            ></label>
+            <div className="relative">
+              {" "}
+              <input
+                id="password"
+                type={eye ? "text" : "password"}
+                value={password}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                  setErrors((prev) => ({ ...prev, password: "" }));
+                }}
+                className={` mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.password && "border-red-600"} focus:ring-amber-600 sm:text-sm `}
+              />
+              {password.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEye(!eye);
+                  }}
+                  className="absolute  inset-y-0 right-0  pr-3 flex items-center text-gray-500"
+                >
+                  {eye ? <EyeOff size={20} /> : <Eye size={20} />}
+                </button>
+              )}
+            </div>
+            {errors.password && (
+              <p className="mt-1 text-xs text-red-600">{errors.password}</p>
+            )}
           </div>
+
           <button
             type="submit"
-            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none  focus:ring-offset-2 focus:ring-amber-500"
           >
             Login
           </button>
         </form>
-        <p className="mt-4 text-sm text-center text-gray-400">
+        <p className="mt-4 text-sm text-center  text-gray-400">
           Don't have an account?{" "}
           <Link to="/register" className="text-amber-600 hover:text-amber-700">
             Register
