@@ -11,7 +11,7 @@ const Developing = () => {
           href="https://www.shahedahmed.tech/"
           target="_blank"
         >
-          Shahed Ahemd
+          Shahed Ahmed
         </a>
       </p>
     </div>

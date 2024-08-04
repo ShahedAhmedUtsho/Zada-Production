@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap");
 
 @import "keep-react/css";
 @tailwind base;
@@ -6,257 +6,255 @@
 @tailwind utilities;
 
 body {
-  background: #1c1c1c;
+    background: #1c1c1c;
 }
 
 .globalBG {
-  background: #1c1c1c !important;
+    background: #1c1c1c !important;
 }
 
 .syne {
-  font-family: "Syne", sans-serif;
+    font-family: "Syne", sans-serif;
 }
 
 .dm {
-  font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .header .active {
-  color: white !important;
+    color: white !important;
 }
 
 .transparent-text-outline {
-  color: transparent !important;
-  text-shadow:
-    1px 1px 0 #ffffff,
-    -1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    1px 0 0 #ffffff,
-    -1px 0 0 #ffffff,
-    0 1px 0 #ffffff,
-    0 -1px 0 #ffffff;
-  font-weight: bold;
-  /* Optional: to make the outline more pronounced */
+    color: transparent !important;
+    text-shadow:
+        1px 1px 0 #ffffff,
+        -1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        1px 0 0 #ffffff,
+        -1px 0 0 #ffffff,
+        0 1px 0 #ffffff,
+        0 -1px 0 #ffffff;
+    font-weight: bold;
+    /* Optional: to make the outline more pronounced */
 }
 
 .text-outline {
-  color: transparent;
-  -webkit-text-stroke: 2px white;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
 
-  text-stroke: 2px white;
-
+    text-stroke: 2px white;
 }
 
 .about-section {
-  background-color: #737373;
-  /* bg-gray-500 */
-  padding-top: 5rem;
-  /* py-5 */
-  padding-bottom: 5rem;
-  /* py-5 */
+    background-color: #737373;
+    /* bg-gray-500 */
+    padding-top: 5rem;
+    /* py-5 */
+    padding-bottom: 5rem;
+    /* py-5 */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  /* gap-8 */
-  padding-left: 1rem;
-  /* mx-4 */
-  padding-right: 1rem;
-  /* mx-4 */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* gap-8 */
+    padding-left: 1rem;
+    /* mx-4 */
+    padding-right: 1rem;
+    /* mx-4 */
 }
 
 @media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    padding-left: 2rem;
-    /* mx-8 */
-    padding-right: 2rem;
-    /* mx-8 */
-  }
+    .container {
+        flex-direction: row;
+        padding-left: 2rem;
+        /* mx-8 */
+        padding-right: 2rem;
+        /* mx-8 */
+    }
 }
 
 .image-section {
-  min-height: 100vh;
-  width: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .main-image {
-  height: 600px;
+    height: 600px;
 }
 
 .main-image .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overflow-image-container {
-  position: relative;
-  margin-top: 2rem;
-  /* mt-8 */
-  height: 400px;
-  overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    /* mt-8 */
+    height: 400px;
+    overflow: hidden;
 }
 
 .overflow-image-container .overflow-image {
-  position: absolute;
-  right: -60px;
-  width: calc(100% + 60px);
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    right: -60px;
+    width: calc(100% + 60px);
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-section {
-  min-height: 100vh;
-  width: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .heading {
-  font-family: 'Syne', sans-serif;
-  /* syne */
-  font-size: 2rem;
-  /* text-4xl */
-  margin-top: 2.5rem;
-  /* mt-10 */
-  font-weight: bold;
-  /* font-bold */
-  line-height: 1.25;
-  /* leading-tight */
-  margin-bottom: 1rem;
-  /* mb-4 */
-  tracking-tight: tight;
+    font-family: "Syne", sans-serif;
+    /* syne */
+    font-size: 2rem;
+    /* text-4xl */
+    margin-top: 2.5rem;
+    /* mt-10 */
+    font-weight: bold;
+    /* font-bold */
+    line-height: 1.25;
+    /* leading-tight */
+    margin-bottom: 1rem;
+    /* mb-4 */
+    tracking-tight: tight;
 }
 
 @media (min-width: 768px) {
-  .heading {
-    font-size: 3rem;
-    /* md:text-5xl */
-  }
+    .heading {
+        font-size: 3rem;
+        /* md:text-5xl */
+    }
 }
 
 @media (min-width: 1024px) {
-  .heading {
-    font-size: 4rem;
-    /* lg:text-6xl */
-  }
+    .heading {
+        font-size: 4rem;
+        /* lg:text-6xl */
+    }
 }
 
 .divider {
-  border: 1px solid #FFB703;
-  /* border-amber-600 */
-  display: inline-block;
-  min-width: 7rem;
-  /* min-w-28 */
+    border: 1px solid #ffb703;
+    /* border-amber-600 */
+    display: inline-block;
+    min-width: 7rem;
+    /* min-w-28 */
 }
 
 .description {
-  font-family: 'DM', sans-serif;
-  /* dm */
-  font-size: 0.875rem;
-  /* text-sm */
-  margin-top: 1.25rem;
-  /* mt-5 */
-  line-height: 2.25rem;
-  /* leading-9 */
-  margin-bottom: 1rem;
-  /* mb-4 */
+    font-family: "DM", sans-serif;
+    /* dm */
+    font-size: 0.875rem;
+    /* text-sm */
+    margin-top: 1.25rem;
+    /* mt-5 */
+    line-height: 2.25rem;
+    /* leading-9 */
+    margin-bottom: 1rem;
+    /* mb-4 */
 }
 
 @media (min-width: 768px) {
-  .description {
-    font-size: 1rem;
-    /* md:text-base */
-  }
+    .description {
+        font-size: 1rem;
+        /* md:text-base */
+    }
 }
 
 .cta-button {
-  margin-top: 2.5rem;
-  /* mt-10 */
-  padding-left: 1rem;
-  /* px-[1em] */
-  padding-right: 1rem;
-  /* px-[1em] */
-  padding-top: 0.5rem;
-  /* py-[0.5em] */
-  padding-bottom: 0.5rem;
-  /* py-[0.5em] */
-  font-size: 0.875rem;
-  /* text-sm */
-  background-color: #FFB703;
-  /* bg-amber-600 */
-  transition: background-color 0.1s ease-in-out;
-  /* transition-all duration-100 */
+    margin-top: 2.5rem;
+    /* mt-10 */
+    padding-left: 1rem;
+    /* px-[1em] */
+    padding-right: 1rem;
+    /* px-[1em] */
+    padding-top: 0.5rem;
+    /* py-[0.5em] */
+    padding-bottom: 0.5rem;
+    /* py-[0.5em] */
+    font-size: 0.875rem;
+    /* text-sm */
+    background-color: #ffb703;
+    /* bg-amber-600 */
+    transition: background-color 0.1s ease-in-out;
+    /* transition-all duration-100 */
 }
 
 .cta-button:hover {
-  background-color: #D97706;
-  /* hover:bg-amber-700 */
+    background-color: #d97706;
+    /* hover:bg-amber-700 */
 }
 
 @media (min-width: 1024px) {
-  .cta-button {
-    font-size: 1.25rem;
-    /* lg:text-xl */
-  }
+    .cta-button {
+        font-size: 1.25rem;
+        /* lg:text-xl */
+    }
 }
 
 .bottom-image-container {
-  background-color: #E2E8F0;
-  /* bg-slate-200 */
-  width: 100%;
-  height: 800px;
-  margin-top: 4rem;
-  /* mt-16 */
+    background-color: #e2e8f0;
+    /* bg-slate-200 */
+    width: 100%;
+    height: 800px;
+    margin-top: 4rem;
+    /* mt-16 */
 }
 
 .bottom-image-container .bottom-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .started {
-  position: relative;
-  background-image: url("https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/dopuhwobmvovpvp7balg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    position: relative;
+    background-image: url("https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/dopuhwobmvovpvp7balg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .started::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-  /* Ensure overlay is behind the content */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    /* Ensure overlay is behind the content */
 }
 
 .startedBox {
-  position: relative;
-  z-index: 1;
-  /* Ensure content is above the overlay */
+    position: relative;
+    z-index: 1;
+    /* Ensure content is above the overlay */
 }
-
 
 /* Define the rotating animation */
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Apply the animation to an element */
 .rotating-element {
-  display: inline-block; /* Ensure the element can be animated */
-  animation: rotate 2s linear infinite; /* Rotate over 2 seconds, infinitely */
+    display: inline-block; /* Ensure the element can be animated */
+    animation: rotate 3s linear infinite; /* Rotate over 2 seconds, infinitely */
 }
