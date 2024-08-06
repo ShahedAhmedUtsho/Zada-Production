@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { createContext, useEffect } from "react";
-import { onAuthStateChanged } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
 import Auth from "../Firebase/firebase.config";
 export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
@@ -9,14 +14,27 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(Auth, (currentUser) => {
       setUser(currentUser);
-      console.dir(currentUser);
-      setLoading(false);
-    });
-    console.dir(onAuthStateChanged);
-    return unsubscribed();
-  }, []);
 
-  const share = { loading, setLoading, user, setUser };
+      setLoading(false);
+      console.log("its user", currentUser, currentUser.email);
+    });
+    return () => {
+      unsubscribed();
+    };
+  }, []);
+  const logOut = () => {
+    signOut(Auth);
+    console.log("logout");
+  };
+
+  const LogIn = (email, password) => {
+    return signInWithEmailAndPassword(Auth, email, password);
+  };
+  const SignUp = (name, email, password) => {
+    return createUserWithEmailAndPassword(Auth, email, password);
+  };
+
+  const share = { loading, setLoading, user, setUser, logOut, LogIn, SignUp };
   return <AuthContext.Provider value={share}>{children}</AuthContext.Provider>;
 };
 

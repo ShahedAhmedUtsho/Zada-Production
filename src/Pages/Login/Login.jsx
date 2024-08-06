@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import useAuth from "../../Hooks/useAuth";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [eye, setEye] = useState(false);
   const [errors, setErrors] = useState({});
-
+  const { loading, setLoading, user, setUser, LogIn } = useAuth();
+  const resetValue = () => {
+    setPassword("");
+    setEmail("");
+  };
   const validate = () => {
     const errors = {};
 
@@ -23,15 +28,28 @@ const Login = () => {
     return errors;
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
+
     const validationError = validate();
     if (Object.keys(validationError).length > 0) {
       setErrors(validationError);
-    } else {
-      console.log(email, password);
+      return;
     }
-    // Add login logic here
+
+    console.log(email, password);
+
+    try {
+      setLoading(true);
+
+      const res = await LogIn(email, password);
+      setUser(res.user);
+      console.log(res.user, "login okey");
+      resetValue();
+      e.target.reset();
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (

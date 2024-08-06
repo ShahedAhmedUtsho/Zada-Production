@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { updateProfile } from "firebase/auth";
+import useAuth from "../../Hooks/useAuth";
 
 const Register = () => {
+  const { SignUp, setLoading } = useAuth();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,17 +34,33 @@ const Register = () => {
     return errors;
   };
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
+
     const validationError = validate();
     if (Object.keys(validationError).length > 0) {
       setErrors(validationError);
-    } else {
-      console.log(username, email, password);
-      resetValue();
-      e.target.reset();
+      return;
     }
-    // Add registration logic here
+
+    try {
+      setLoading(true);
+      const res = await SignUp(username, email, password);
+      const user = res.user;
+
+      try {
+        await updateProfile(user, {
+          displayName: name,
+        });
+        console.log("create user done", "okey", res);
+        resetValue();
+        e.target.reset();
+      } catch (error) {
+        console.log(error.message);
+      }
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (
