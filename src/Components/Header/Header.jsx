@@ -16,7 +16,7 @@ const Header = () => {
         </h3>
 
         <ul className="w-full lg:flex hidden  justify-around max-w-[550px]   items-center">
-          {["home", "about", "services", "contact", "colors"].map(
+          {["home", "about", "services", "contact", "shop"].map(
             (a, index) => (
               <NavLink
                 to={a === "home" ? "/" : `/${a}`}

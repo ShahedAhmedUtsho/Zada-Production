@@ -14,6 +14,7 @@ import Projects from "./Pages/Projects/Projects";
 import Services from "./Pages/Services/Services";
 import About from "./Pages/About/About";
 import AuthProvider from "./Provider/AuthProvider";
+import Shop from "./Pages/Shop/Shop";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/colors",
         element: <ColorGrid />,
+      },
+      {
+        path: "/shop",
+        element: <Shop/>,
       },
     ],
   },
