@@ -1,4 +1,4 @@
-const Shop = ()=>{
+const Shop = () =>{
   return (
     <div>
     this is Shop
