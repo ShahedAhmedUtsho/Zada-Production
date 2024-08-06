@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import { updateProfile } from "firebase/auth";
 import useAuth from "../../Hooks/useAuth";
+import Auth from "../../Firebase/firebase.config";
 
 const Register = () => {
-  const { SignUp, setLoading } = useAuth();
+  const navigate = useNavigate()
+  const { SignUp,setLoading,setUser,logOut } = useAuth();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,33 +36,37 @@ const Register = () => {
     return errors;
   };
 
-  const handleRegister = async (e) => {
+  const handleRegister = (e) => {
     e.preventDefault();
-
     const validationError = validate();
     if (Object.keys(validationError).length > 0) {
       setErrors(validationError);
       return;
     }
 
-    try {
-      setLoading(true);
-      const res = await SignUp(username, email, password);
-      const user = res.user;
+    setLoading(true);
 
-      try {
-        await updateProfile(user, {
-          displayName: name,
-        });
-        console.log("create user done", "okey", res);
-        resetValue();
-        e.target.reset();
-      } catch (error) {
-        console.log(error.message);
-      }
-    } catch (err) {
-      console.log(err.message);
-    }
+       SignUp(email, password)
+         .then(async(res) => {
+           const user = res.user;
+           return updateProfile(user, {
+             displayName: username,
+           }).then(() => user);
+         })
+         .then((user) => {
+           console.log(user)
+           setUser(user);
+           resetValue();
+           e.target.reset();
+         })
+         .catch((error) => {
+           console.log(error.message);
+         })
+         .finally(() => {
+           setLoading(false);
+           logOut()
+           navigate("/login")
+         });
   };
 
   return (

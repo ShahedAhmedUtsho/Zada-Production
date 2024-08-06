@@ -16,7 +16,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
 
       setLoading(false);
-      console.log("its user", currentUser, currentUser.email);
+      console.log("its user", currentUser, currentUser?.email);
     });
     return () => {
       unsubscribed();
@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
   const LogIn = (email, password) => {
     return signInWithEmailAndPassword(Auth, email, password);
   };
-  const SignUp = (name, email, password) => {
+  const SignUp = (email,password) => {
     return createUserWithEmailAndPassword(Auth, email, password);
   };
 

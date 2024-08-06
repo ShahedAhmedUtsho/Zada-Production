@@ -2,8 +2,10 @@ import { AlignJustify, Facebook, ShoppingCart, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { InstagramLogo, TwitterLogo, YoutubeLogo } from "phosphor-react";
+import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
+  const { loading, user, logOut } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -35,13 +37,20 @@ const Header = () => {
                 0
               </span> */}
             </div>
-            <Link
-              to="/login"
-              className=" border border-gray-400 backdrop-blur-sm border-sm uppercase text-sm px-[1em] py-[0.3em]  "
-            >
-              {" "}
-              <p className=" tracking-wide">login</p>
-            </Link>
+          {!user ? (  <Link
+            to="/login"
+            className=" border border-gray-400 backdrop-blur-sm border-sm uppercase text-sm px-[1em] py-[0.3em]  "
+          >
+            {" "}
+            <p className=" tracking-wide">login</p>
+          </Link>) : (  <div onClick={logOut}
+
+            className=" border rounded-full  border-gray-400 backdrop-blur-sm border-sm uppercase text-xs p-1 w-8 flex justify-center items-center -tracking-wider h-8  "
+          >
+          {user?.displayName?.slice(0,2)}
+
+
+          </div>)}
           </div>
           <AlignJustify
             onClick={() => {
