@@ -10,11 +10,13 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Contact from "./Pages/Contact/Contact";
 import Projects from "./Pages/Projects/Projects";
-
 import Services from "./Pages/Services/Services";
 import About from "./Pages/About/About";
 import AuthProvider from "./Provider/AuthProvider";
 import Shop from "./Pages/Shop/Shop";
+import Redirect from "./Pages/Redarect/Redarect" ;
+import { HelmetProvider } from "react-helmet-async";
+
 
 const router = createBrowserRouter([
   {
@@ -58,14 +60,21 @@ const router = createBrowserRouter([
         path: "/shop",
         element: <Shop/>,
       },
+      {
+        path: "/shahedahmed",
+        element: <Redirect />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <HelmetProvider>
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>
+    </HelmetProvider>
+    
   </React.StrictMode>,
 );

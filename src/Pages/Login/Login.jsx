@@ -55,7 +55,7 @@ const Login = () => {
     <div className="flex flex-col relative items-center justify-center min-h-screen bg-[#1a1a1a] text-white">
       <Link
         to="/"
-        className="syne  absolute right-5 bottom-5  text-2xl md:text-3xl lg:text-4xl text-white  "
+        className="syne  uppercase  absolute right-5 bottom-5  text-2xl md:text-3xl lg:text-4xl text-white  "
       >
         Zada
       </Link>

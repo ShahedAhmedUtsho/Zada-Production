@@ -11,14 +11,15 @@ const Header = () => {
   return (
     <>
       <div className="md:min-h-[74px] min-h-16  header flex lg:container mx-4 md:mx-8 lg:mx-auto    justify-between items-center  ">
-        <h3 className="syne text-2xl md:text-3xl lg:text-4xl text-white  ">
+        <Link to="/" className="syne text-2xl md:text-3xl lg:text-4xl text-white  ">
           Zada
-        </h3>
+        </Link>
 
         <ul className="w-full lg:flex hidden  justify-around max-w-[550px]   items-center">
           {["home", "about", "services", "contact", "shop"].map(
             (a, index) => (
-              <NavLink
+              <NavLink 
+             
                 to={a === "home" ? "/" : `/${a}`}
                 className=" text-gray-500 hover:text-amber-600 font-medium text-sm  uppercase   tracking-[1px] leading-4 px-5 py-3   "
                 key={index}
@@ -87,6 +88,7 @@ const Header = () => {
           <ul className="flex lg:hidden md:mb-20 mb-10 flex-col">
             {["home", "about", "services", "contact"].map((a, index) => (
               <NavLink
+              onClick={()=>{setIsOpen(false)}}
                 to={a === "home" ? "/" : `/${a}`}
                 className=" text-gray-500 hover:text-amber-600 font-medium text-sm  uppercase   tracking-[1px] leading-4 md:px-5 py-3   "
                 key={index}
