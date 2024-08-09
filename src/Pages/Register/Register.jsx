@@ -4,6 +4,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { updateProfile } from "firebase/auth";
 import useAuth from "../../Hooks/useAuth";
 import Auth from "../../Firebase/firebase.config";
+import axios, { Axios } from "axios";
 
 const Register = () => {
   const navigate = useNavigate()
@@ -43,7 +44,8 @@ const Register = () => {
       setErrors(validationError);
       return;
     }
-
+   
+    logOut()
     setLoading(true);
 
        SignUp(email, password)
@@ -58,14 +60,26 @@ const Register = () => {
            setUser(user);
            resetValue();
            e.target.reset();
+           const userData = {name : username ,email, uid : user.uid,  phone : "", address :"" ,isAdmin:false} ;
+axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`,userData)
+.then(res =>{
+  console.log("mongodb good",res.data) 
+  
+  navigate("/login")
+})
+.catch(err=>{
+  console.log(err.message,"mongodb faild")
+})
+           
+           
+
          })
          .catch((error) => {
            console.log(error.message);
          })
          .finally(() => {
            setLoading(false);
-           logOut()
-           navigate("/login")
+          
          });
   };
 

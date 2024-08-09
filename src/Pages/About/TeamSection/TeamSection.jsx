@@ -8,6 +8,15 @@ import { Fade } from 'react-awesome-reveal';
 
 const teamMembers = [
     {
+        name: 'Abu Zada',
+        position: 'Media Manager',
+        image: 'https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/z4cqwmxy1w6hlj5tc51r',
+        facebook: 'https://www.facebook.com/profile.php?id=100008803711247',
+        twitter: 'https://twitter.com/eveadams',
+        linkedin: 'https://linkedin.com/in/eveadams',
+    },
+   
+    {
         name: 'Mohammad Emon',
         position: 'PHOTOGRAPHER',
         image: 'https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/gbaaezrtvq0kuigmaykd',
@@ -23,14 +32,7 @@ const teamMembers = [
         twitter: 'https://twitter.com/charliebrown',
         linkedin: 'https://linkedin.com/in/charliebrown',
     },
-    {
-        name: 'Tuhin Siddique',
-        position: 'PROJECT MANAGER',
-        image: 'https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/ilc7lx1a2nc1baxd2sxh',
-        facebook: 'https://facebook.com/dianaprince',
-        twitter: 'https://twitter.com/dianaprince',
-        linkedin: 'https://linkedin.com/in/dianaprince',
-    },
+    
     {
         name: 'Shahed Ahmed',
         position: 'Developer',
@@ -40,13 +42,14 @@ const teamMembers = [
         linkedin: 'https://linkedin.com/in/bobsmith',
     },
     {
-        name: 'Abu Zada',
-        position: 'Media Manager',
-        image: 'https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/z4cqwmxy1w6hlj5tc51r',
-        facebook: 'https://www.facebook.com/profile.php?id=100008803711247',
-        twitter: 'https://twitter.com/eveadams',
-        linkedin: 'https://linkedin.com/in/eveadams',
+        name: 'Tuhin Siddique',
+        position: 'PROJECT MANAGER',
+        image: 'https://res.cloudinary.com/dmcmxmqpw/image/upload/f_auto,q_auto/ilc7lx1a2nc1baxd2sxh',
+        facebook: 'https://facebook.com/dianaprince',
+        twitter: 'https://twitter.com/dianaprince',
+        linkedin: 'https://linkedin.com/in/dianaprince',
     },
+   
 ];
 
 const NextArrow = ({ onClick }) => (

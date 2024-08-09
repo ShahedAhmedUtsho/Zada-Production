@@ -2,12 +2,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import useAuth from "../../Hooks/useAuth";
+import axios from "axios";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [eye, setEye] = useState(false);
   const [errors, setErrors] = useState({});
-  const { LogIn ,setLoading , user,setUser} = useAuth();
+  const { LogIn ,setLoading , user,setUser ,logOut} = useAuth();
   const navigate = useNavigate();
   const resetValue = () => {
 
@@ -40,14 +41,22 @@ const Login = () => {
       .then((res) => {
         setLoading(true);
         setUser(res.user);
-        setLoading(false)
-        console.log(res.user , "login okey");
-        resetValue();
-        e.target.reset();
-        navigate("/")
+setLoading(false) ;
+console.log(res.user , "login okey");
+resetValue();
+e.target.reset();
+
+
+
+navigate("/") ;
+
+
+      
       })
       .catch((err) => {
-        console.log(err.message);
+        console.log(err.message); 
+        logOut()
+        
       });
   };
 
