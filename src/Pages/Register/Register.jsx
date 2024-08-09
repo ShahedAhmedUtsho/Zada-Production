@@ -3,22 +3,23 @@ import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import { updateProfile } from "firebase/auth";
 import useAuth from "../../Hooks/useAuth";
-import Auth from "../../Firebase/firebase.config";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const Register = () => {
-  const navigate = useNavigate()
-  const { SignUp,setLoading,setUser,logOut } = useAuth();
+  const navigate = useNavigate();
+  const { SignUp, setLoading, setUser, logOut } = useAuth();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [eye, setEye] = useState(false);
+
   const resetValue = () => {
     setUsername("");
     setPassword("");
     setEmail("");
   };
+
   const validate = () => {
     const errors = {};
     if (!username) {
@@ -44,50 +45,53 @@ const Register = () => {
       setErrors(validationError);
       return;
     }
-   
-    logOut()
+
+    logOut();
     setLoading(true);
 
-       SignUp(email, password)
-         .then(async(res) => {
-           const user = res.user;
-           return updateProfile(user, {
-             displayName: username,
-           }).then(() => user);
-         })
-         .then((user) => {
-           console.log(user)
-           setUser(user);
-           resetValue();
-           e.target.reset();
-           const userData = {name : username ,email, uid : user.uid,  phone : "", address :"" ,isAdmin:false} ;
-axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`,userData)
-.then(res =>{
-  console.log("mongodb good",res.data) 
-  
-  navigate("/login")
-})
-.catch(err=>{
-  console.log(err.message,"mongodb faild")
-})
-           
-           
-
-         })
-         .catch((error) => {
-           console.log(error.message);
-         })
-         .finally(() => {
-           setLoading(false);
-          
-         });
+    SignUp(email, password)
+      .then(async (res) => {
+        const user = res.user;
+        await updateProfile(user, {
+          displayName: username,
+        });
+        return user;
+      })
+      .then((user) => {
+        console.log(user);
+        setUser(user);
+        resetValue();
+        e.target.reset();
+        const userData = {
+          name: username,
+          email,
+          uid: user.uid,
+          phone: "",
+          address: "",
+          isAdmin: false,
+        };
+        axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`, userData)
+          .then((res) => {
+            console.log("mongodb good", res.data);
+            navigate("/login");
+          })
+          .catch((err) => {
+            console.log(err.message, "mongodb failed");
+          });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
     <div className="flex flex-col items-center relative justify-center min-h-screen bg-[#1a1a1a] text-white">
       <Link
         to="/"
-        className="syne  absolute right-5 bottom-5  text-2xl md:text-3xl lg:text-4xl text-white  "
+        className="syne absolute right-5 bottom-5 text-2xl md:text-3xl lg:text-4xl text-white"
       >
         Zada
       </Link>
@@ -111,10 +115,10 @@ axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`,userData)
                 setUsername(e.target.value);
                 setErrors((prev) => ({ ...prev, username: "" }));
               }}
-              className={` mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.username && "border-red-600"} focus:ring-amber-600 sm:text-sm `}
+              className={`mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.username ? "border-red-600" : ""} focus:ring-amber-600 sm:text-sm`}
             />
             {errors.username && (
-              <p className=" mt-1  text-xs text-red-600">{errors.username}</p>
+              <p className="mt-1 text-xs text-red-600">{errors.username}</p>
             )}
           </div>
 
@@ -133,14 +137,14 @@ axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`,userData)
                 setEmail(e.target.value);
                 setErrors((prev) => ({ ...prev, email: "" }));
               }}
-              className={` mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.email && "border-red-600"} focus:ring-amber-600 sm:text-sm `}
+              className={`mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.email ? "border-red-600" : ""} focus:ring-amber-600 sm:text-sm`}
             />
             {errors.email && (
-              <p className=" mt-1  text-xs text-red-600">{errors.email}</p>
+              <p className="mt-1 text-xs text-red-600">{errors.email}</p>
             )}
           </div>
 
-          <div className=" relative ">
+          <div className="relative">
             <label
               htmlFor="password"
               className="block text-sm font-medium text-gray-300"
@@ -156,28 +160,26 @@ axios.post(`${import.meta.env.VITE_BACKEND_URL}/register`,userData)
                   setPassword(e.target.value);
                   setErrors((prev) => ({ ...prev, password: "" }));
                 }}
-                className={` mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.password && "border-red-600"} focus:ring-amber-600 sm:text-sm `}
+                className={`mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-300 placeholder-gray-500 focus:outline-none focus:border-amber-600 ${errors.password ? "border-red-600" : ""} focus:ring-amber-600 sm:text-sm`}
               />
               {password.length > 0 && (
                 <button
                   type="button"
-                  onClick={() => {
-                    setEye(!eye);
-                  }}
-                  className="absolute  inset-y-0 right-0 top-0 pr-3 flex items-center text-gray-500"
+                  onClick={() => setEye(!eye)}
+                  className="absolute inset-y-0 right-0 top-0 pr-3 flex items-center text-gray-500"
                 >
                   {eye ? <EyeOff size={20} /> : <Eye size={20} />}
                 </button>
               )}
             </div>
             {errors.password && (
-              <p className=" mt-1  text-xs text-red-500">{errors.password}</p>
+              <p className="mt-1 text-xs text-red-500">{errors.password}</p>
             )}
           </div>
 
           <button
             type="submit"
-            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none  "
+            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none"
           >
             Register
           </button>

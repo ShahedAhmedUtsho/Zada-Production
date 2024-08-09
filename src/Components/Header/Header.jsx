@@ -46,9 +46,12 @@ const Header = () => {
             <p className=" tracking-wide">login</p>
           </Link>) : (  <div onClick={logOut}
 
-            className=" border rounded-full  border-gray-400 backdrop-blur-sm border-sm uppercase text-xs p-1 w-8 flex justify-center items-center -tracking-wider h-8  "
+            className=" rounded-full   backdrop-blur-sm border-sm uppercase text-xs overflow-hidden w-8 flex justify-center items-center -tracking-wider h-8  "
           >
-          {user?.displayName?.slice(0,2)}
+            {
+              user?.photoURL ? <img src={user?.photoURL} alt="profile photo" className="w-full h-full object-cover" />: <span className="p-1 border  border-gray-500"> {user?.displayName?.slice(0,2)}</span>
+            }
+         
 
 
           </div>)}
